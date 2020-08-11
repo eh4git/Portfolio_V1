@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Shadows+Into+Light+Two");
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.wrapper .parallax-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper .parallax-container .parallax {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-image: url("../../assets/images/stars-forest-silhouette.gif");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  color: #dcdcdc;
+  text-align: center;
+}
+
+.wrapper .parallax-container .parallax h1 {
+  font-size: 6rem;
+  line-height: 6.75rem;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.wrapper .parallax-container .parallax .line {
+  border-style: solid;
+  border-width: .05rem;
+  margin: .5rem 0;
+}
+
+.wrapper .parallax-container .parallax span {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.wrapper .text-container {
+  padding: 10vh 10vw;
+  text-align: center;
+}
+
+.wrapper .text-container .text-block h5 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+@-webkit-keyframes openTopLine {
+  0% {
+    width: 0;
+    -webkit-transform: translateY(5em);
+            transform: translateY(5em);
+  }
+  50% {
+    width: 27em;
+    -webkit-transform: translateY(5em);
+            transform: translateY(5em);
+  }
+  100% {
+    width: 27em;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes openTopLine {
+  0% {
+    width: 0;
+    -webkit-transform: translateY(5em);
+            transform: translateY(5em);
+  }
+  50% {
+    width: 27em;
+    -webkit-transform: translateY(5em);
+            transform: translateY(5em);
+  }
+  100% {
+    width: 27em;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes openBottomLine {
+  0% {
+    width: 0;
+    -webkit-transform: translateY(-5em);
+            transform: translateY(-5em);
+  }
+  50% {
+    width: 27em;
+    -webkit-transform: translateY(-5em);
+            transform: translateY(-5em);
+  }
+  100% {
+    width: 27em;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes openBottomLine {
+  0% {
+    width: 0;
+    -webkit-transform: translateY(-5em);
+            transform: translateY(-5em);
+  }
+  50% {
+    width: 27em;
+    -webkit-transform: translateY(-5em);
+            transform: translateY(-5em);
+  }
+  100% {
+    width: 27em;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideContent {
+  0%, 30% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideContent {
+  0%, 30% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  font-size: 1.1em;
+  font-family: "Roboto Slab";
+  text-align: center;
+  color: #bdbdbd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.logo .line {
+  height: 1px;
+  background: #bdbdbd;
+  display: inline-block;
+  width: 27em;
+}
+
+.logo .line.topLine {
+  -webkit-animation: openTopLine 1.5s;
+          animation: openTopLine 1.5s;
+}
+
+.logo .line.bottomLine {
+  -webkit-animation: openBottomLine 1.5s;
+          animation: openBottomLine 1.5s;
+}
+
+.logo .content {
+  -webkit-animation: slideContent 1s;
+          animation: slideContent 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.logo .content .vintage {
+  font-weight: 400;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #212121, 2px 2px 0px #bdbdbd;
+  letter-spacing: 4px;
+}
+
+.logo .content .since {
+  font-weight: 100;
+  margin: 0.25em auto 0.5em;
+}
+
+.logo .content .desc {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.logo .content .skillz {
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.logo .content .links a {
+  display: inline-block;
+  color: #bdbdbd;
+  font-size: 1.25em;
+  margin: 0.25em 0.2em 0;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  cursor: pointer;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
+  -webkit-animation: slideContent 1s;
+          animation: slideContent 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.logo .content .links a:nth-of-type(1n) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.logo .content .links a:nth-of-type(2n) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+
+.logo .content .links a:nth-of-type(3n) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.logo .content .links a:nth-of-type(4n) {
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
+}
+
+.logo .content .links a:nth-of-type(5n) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.logo .content .links a:hover {
+  color: white;
+}
+
+#viewProfileBtn {
+  color: #bdbdbd;
+  border: none;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+  -webkit-animation: fadein 10s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 10s;
+}
+
+#viewProfileBtn:hover {
+  color: white;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+
+#buttonInsertSpace {
+  margin-bottom: 6px;
+}
+/*# sourceMappingURL=main.css.map */

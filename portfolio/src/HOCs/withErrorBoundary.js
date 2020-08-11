@@ -23,14 +23,9 @@ class ErrorBoundary extends Component {
   render() {
     const Component = this.props.component
     return (
-      this.state.hasError ? <h1>OOOps...Something went wrong.</h1>
-        : <Component
-          getDerivedStateFromError={this.getDerivedStateFromError}
-          componentDidCatch={this.componentDidCatch}
-        />
+      this.state.hasError ? <h1>OOOps...Something went wrong.</h1> : <Component />
     )
   }
-
 }
 
 function withErrorBoundary(component) {
