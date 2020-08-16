@@ -14,6 +14,7 @@ h1{
     background-color: rgba(57, 85, 63, 0.753);
     margin-bottom: 0;
     padding: 20px;
+    font-size: 46px;
 } 
 h2{ 
     font-family: 'Pacifico', cursive;
@@ -29,7 +30,7 @@ li{
 }
 a{
   font-family: 'Cabin', sans-serif;
-  font-size:17px;
+  font-size:24px;
   font-weight: bold;
   color: rgb(0, 65, 0);
 }
@@ -37,8 +38,9 @@ a:hover {
   color: rgb(70, 143, 75);
   font-size: 21px;
 }
+
 body{
-  background-image: url('../images/bigbearlakesunset.jpg');
+  background-image: url('../images/bricks-459299_1920.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -101,6 +103,9 @@ body{
 .aboutmetext .col-md-6 {
   background-color: rgba(57, 85, 63, 0.753);
 }
+.nav-header{
+  font-size: 36px;
+}
 .navbar{
   opacity: .8;
 }
@@ -111,13 +116,35 @@ body{
   }
 }
 .jumbotron-fluid {
+  overflow: auto;
   padding-right: 0;
   padding-left: 0;
   background-color: #bec8c0;
   padding: 30px;
-  opacity: .85;
+  /* opacity: 0.95; */
   border: solid 4px #997756;
-  border-radius: 5px;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 25px;
+  width: 75%;
+}
+.profileSection{
+  background-color: rgba(57, 85, 63, 0.753);
+  display: inline-block;
+  text-align: center;
+  width:  200px;
+  border-radius: 20px;
+  color: whitesmoke;
+  
+}
+#profilePicture{
+  border-radius: 50%;
+  margin-right: 30px;
+  float: left;
+  vertical-align: middle;
+  border-style: outset;
+  border-color: burlywood;
+  width: 215px;
 }
 
 /* cool pages effect */

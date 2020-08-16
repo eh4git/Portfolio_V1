@@ -1,6 +1,9 @@
+import React from "react"
+import { Link } from "react-router-dom";
+
 const profileText =
 {
-    "aboutMe": "My name is Erik Hirsch, I am a full stack developer who incorporates technical ability with collaborative skills to produce produce innovative applications. I graduated the Web Development Coding Boot Camp at UCLA Extension. The course has given me a solid foundation of technical skills as well as improved my ability to adapt to new ideas and concepts. I am very motivated to get a job using the skill that I am learning now. I like to code and I would love to be able to have a career that I can enjoy! I have learned HTML, CSS, Java Script/ JQuery, ES6, Node, MySQL, MongoDB, and ReactJs. I am currently learning React Native and Redux. Please checkout the links below to view some of the projects and assignments I have created so far.",
+    "aboutMe": "My name is Erik Hirsch, I am a full stack developer who incorporates technical ability with collaborative skills to produce produce innovative web and mobile applications. I enjoy collaboration and have a passion for learning and problem solving.  A few of my technical skills include HTML, CSS, JavaScript, JQuery, ES6, Node, MySQL, MongoDB, React, React Native, and Redux. I graduated the Web Development Coding Boot Camp at UCLA Extension. The course has given me a solid foundation of technical skills as well as improved my ability to adapt to and learn new ideas and concepts. I am excited to transition into a new career that will challenge me and help me develop my skills. ",
 
     "repositories": [
         {
@@ -20,7 +23,7 @@ const profileText =
     "profiles": [
         {
             "name": "LinkedIn",
-            "href": "https://www.linkedin.com/in/erik-hirsch-b8aa251a5/"
+            "href": "https://www.linkedin.com/in/e-hirsch/"
         },
         {
             "name": "Github",
@@ -30,16 +33,17 @@ const profileText =
 
     "profileSections": [
         {
-            "name": "About Me",
-            "href": "#aboutMe"
+            "name": "Profile",
+            "href": "/profile"
         },
         {
             "name": "Projects",
-            "href": "#projects"
+            "href": "/projects"
+
         },
         {
             "name": "Contact",
-            "href": "#contact"
+            "href": "/contact"
         },
     ],
 
@@ -83,8 +87,9 @@ const profileText =
     "phone": "760 420-4308",
     "location": "Apple Valley, CA 92308",
 
-    "homePage": "/React_Profile",
-    "profilePage": "/profile"
+    "homePage": "/",
+    "profilePage": "/profile",
+    "profilePicture": require("../assets/images/Optimized-ProfilePic.jpg")
 }
 
 export default profileText;

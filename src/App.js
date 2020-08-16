@@ -3,18 +3,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import withErrorBoundary from "./HOCs/withErrorBoundary"
 // import Test from "./components/test"
-import LandingPage from "./components/LandingPage"
-import Projects from "./components/Projects"
-import Contact from "./components/Contact"
-import Profile from "./components/Profile"
+import LandingPage from "./pages/LandingPage"
+import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
+import Profile from "./pages/Profile"
 
 
 function App() {
   return (
     <Router >
-      {/* can replace content here with landing page */}
-      {/* <Test /> */}
-      
       <Switch>
         <Route exact path="/projects">
           <Projects />
@@ -29,7 +26,6 @@ function App() {
           <LandingPage />
         </Route>
       </Switch>
-
     </Router>
   );
 }

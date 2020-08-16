@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Pdf from "../assets/docs/WebDevResume.pdf";
 import Docx from "../assets/docs/WebDevResume.docx"
+import profileText from "../assets/profileText"
 import '../assets/css/main.css';
 
 function LandingPage(props) {
@@ -23,17 +24,17 @@ return (
               <div className="desc">Full-Stack Web Developer</div>
               <div className="skillz">HTML&nbsp;+&nbsp;CSS&nbsp;+&nbsp;JS</div>
               <div className="links">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/erik-hirsch-b8aa251a5/"><i
+                <a target="_blank" rel="noopener noreferrer" href={profileText.profiles[0].href}><i
                   className="fa fa-linkedin-square"></i></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/eh4git"><i className="fa fa-github"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href={profileText.profiles[1].href}><i className="fa fa-github"></i></a>
                 <a target="_blank" rel="noopener noreferrer" onClick={onPdfClick}><i className="fa fa-file-pdf-o"></i></a>
                 <a target="_blank" rel="noopener noreferrer" onClick={onDocxClick}><i className="fa fa-file-word-o"></i></a>
-                {/* <a target="_blank" href="#"><i className="fa fa-codepen"></i></a> */}
+                {/* <a target="_blank" href={profileText.profiles[2].href}><i className="fa fa-codepen"></i></a> */}
               </div>
             </div>
             <div className="line bottomLine"></div>
             <div id="buttonInsertSpace">
-           <Link to="/profile">View Profile</Link>
+           <Link id='viewProfileBtn' to="/profile">View Profile</Link>
             </div>
           </div>
         </div>
