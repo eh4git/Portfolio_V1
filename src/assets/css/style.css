@@ -146,6 +146,9 @@ body{
   border-color: burlywood;
   width: 215px;
 }
+.projectContainer{
+  margin: 30px
+}
 
 /* cool pages effect */
 /* background-color: white;
