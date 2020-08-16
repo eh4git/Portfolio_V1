@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const profileText =
 {
-    "aboutMe": "My name is Erik Hirsch, I am a full stack developer who incorporates technical ability with collaborative skills to produce produce innovative web and mobile applications. I enjoy collaboration and have a passion for learning and problem solving.  A few of my technical skills include HTML, CSS, JavaScript, JQuery, ES6, Node, MySQL, MongoDB, React, React Native, and Redux. I graduated the Web Development Coding Boot Camp at UCLA Extension. The course has given me a solid foundation of technical skills as well as improved my ability to adapt to and learn new ideas and concepts. I am excited to transition into a new career that will challenge me and help me develop my skills. ",
+    "aboutMe": "My name is Erik Hirsch, I am a full stack developer who incorporates technical ability with collaborative skills to produce produce innovative web and mobile applications. I truly enjoy collaborating and team environments and I have a passion for learning and problem solving. A few of my technical skills include HTML, CSS, JavaScript, JQuery, ES6, Node, MySQL, MongoDB, React, React Native, and Redux. I completed the Web Development Coding Boot Camp at UCLA Extension. The course has given me a solid foundation of technical skills as well as improved my ability to adapt to and learn new ideas and concepts. I am excited to transition into a new career that will challenge me and help me to develop my skills. ",
 
     "repositories": [
         {
@@ -89,7 +89,11 @@ const profileText =
 
     "homePage": "/",
     "profilePage": "/profile",
-    "profilePicture": require("../assets/images/Optimized-ProfilePic.jpg")
+    "profilePicture": require("../assets/images/Optimized-ProfilePic.jpg"),
+    "skills":{
+        technical:['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'MySQL', 'MongoDB', 'Ajax', 'Express', 'Nodejs', 'React', 'React Native', 'Redux', 'Bootstrap', ],
+        other:["Communication", "Teamwork", "Leadership", "Reliable", "Strong Work Ethic", "Adaptable"]
+    }
 }
 
 export default profileText;

@@ -22,8 +22,9 @@ class ErrorBoundary extends Component {
 
   render() {
     const Component = this.props.component
+    console.log(this.props)
     return (
-      this.state.hasError ? <h1>OOOps...Something went wrong.</h1> : <Component />
+      this.state.hasError ? <h1 id='errMsg'>OOOps...Something went wrong...</h1> : <Component />
     )
   }
 }
