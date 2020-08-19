@@ -25,7 +25,7 @@ const NavBar = () => {
                         {profileText.profiles.map((item, i) => {
                             return (
                                 <li className="nav-item" key={i}>
-                                    <a className="nav-link" href={item.href} rel="noopener noreferrer" target="_blank">My
+                                    <a className="nav-link" href={item.href} rel="noopener noreferrer" target="_blank">
                 {item.name}</a>
                                 </li>
                             )
