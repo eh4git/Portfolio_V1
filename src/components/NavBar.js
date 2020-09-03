@@ -1,6 +1,7 @@
 import React from "react";
 import profileText from "../assets/profileText"
 import '../assets/css/style.css'
+import {Link} from "react-router-dom"
 
 const NavBar = () => {
     return (
@@ -16,8 +17,9 @@ const NavBar = () => {
                         {profileText.profileSections.map((item, i) => {
                             return (
                                 <li className="nav-item active" key={i}>
-                                    <a className="nav-link" href={item.href}>
-                                        {item.name}</a>
+                                    <Link className="nav-link" to={item.href}>
+                                        {item.name}
+                                    </Link>
                                 </li>
                             )
                         })
