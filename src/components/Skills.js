@@ -9,9 +9,9 @@ const Skills = () => {
                 <div className="col-md-6">
                     <h4>Technical</h4>
                     <ul>
-                        {profileText.skills.technical.map(item => {
+                        {profileText.skills.technical.map((item, i) => {
                             return (
-                                <li>
+                                <li key={i}>
                                     {item}
                                 </li>
                             )
@@ -21,9 +21,9 @@ const Skills = () => {
                 <div className="col-md-6">
                     <h4>Other</h4>
                     <ul>
-                        {profileText.skills.other.map(item => {
+                        {profileText.skills.other.map((item, i) => {
                             return (
-                                <li>
+                                <li key={i}>
                                     {item}
                                 </li>
                             )

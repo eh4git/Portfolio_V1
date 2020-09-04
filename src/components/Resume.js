@@ -1,5 +1,5 @@
 import React from "react";
-import profileText from '../assets/profileText'
+
 import Pdf from "../assets/docs/WebDevResume.pdf";
 const Resume = () => {
     return (

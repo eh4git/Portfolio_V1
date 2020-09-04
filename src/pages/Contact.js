@@ -36,7 +36,7 @@ const Contact = () => {
         <p>{profileText.phone} <br/>
         {profileText.location}
         </p>
-        <a onClick={onResumeClick} target="_blank" >My Resume</a>
+        {/* <a onClick={onResumeClick} target="_blank" >My Resume</a> */}
             </div>
         </>
     )
