@@ -2,9 +2,10 @@ import React from "react";
 import profileText from "../assets/profileText"
 import '../assets/css/style.css'
 import { Link } from "react-router-dom"
-import ThemeBtn from "../components/ThemeBtn"
+import ThemeSlider from "./themeSlider/ThemeSlider"
 
 const NavBar = () => {
+    
     return (
         <nav id="nav" className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand nav-header" href={profileText.homePage}>{profileText.name}</a>
@@ -35,7 +36,7 @@ const NavBar = () => {
                     }
                 </ul>
             </div>
-            <ThemeBtn />
+            <ThemeSlider />
         </nav>
     )
 }
