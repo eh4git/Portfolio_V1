@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import NavBar from "../components/NavBar"
 import Pdf from "../assets/docs/WebDevResume.pdf";
 import profileText from "../assets/profileText"
+import {Context} from "../context/index"
 
 const Contact = () => {
-   
+   const {theme} = useContext(Context)
      const onResumeClick= ()=> {
       window.open(Pdf);
     }

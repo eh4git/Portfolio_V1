@@ -2,6 +2,7 @@ import React from "react";
 import profileText from "../assets/profileText"
 import '../assets/css/style.css'
 import { Link } from "react-router-dom"
+import ThemeBtn from "../components/ThemeBtn"
 
 const NavBar = () => {
     return (
@@ -34,6 +35,7 @@ const NavBar = () => {
                     }
                 </ul>
             </div>
+            <ThemeBtn />
         </nav>
     )
 }

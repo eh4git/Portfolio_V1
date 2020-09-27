@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import NavBar from "../components/NavBar"
 import profileText from "../assets/profileText"
+import {Context} from "../context/index"
 
 const Projects = () => {
+    const {theme} = useContext(Context)
     return (
         <div>
             <NavBar />
