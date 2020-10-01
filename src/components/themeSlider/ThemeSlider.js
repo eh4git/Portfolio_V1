@@ -1,4 +1,3 @@
-import { geoConicConformalRaw } from "d3"
 import React, {useState, useContext} from "react"
 import "./index.css"
 import {Context} from "../../context/index"
@@ -20,10 +19,10 @@ function ThemeSlider() {
     console.log(sliderValue)
     console.log(theme)
     return (
-        <>
-            <p>Select A Theme</p>
+        <div className="sliderContainer">
+            <p className="sliderText">Select A Theme</p>
             <input type="range" min="1" max="100" step="1" value={sliderValue} onChange={onChange} />
-        </>
+        </div>
     )
 }
 export default ThemeSlider
