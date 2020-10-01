@@ -5,16 +5,16 @@ import "./index.css"
 const TypingGame = () => {
     const [text, timeRemaining, isTimeRunning, wordCount, textBoxRef, handleChange, calculateWordCount, startGame, endGame] = useTypingGame()
     return(
-        <div className="typingGameContainer">
+        <div id="typingGameContainer">
             <h1>How fast do you type?</h1>
-            <textarea id="typingtextarea"
+            <textarea id="typingGameTextArea"
                 ref={textBoxRef}
                 onChange={handleChange}
                 value={text}
                 disabled={!isTimeRunning}
             />
-            <h4>Time remaining: {timeRemaining}</h4>
-            <button 
+            <h4 id="typingGameHeader">Time remaining: {timeRemaining}</h4>
+            <button id="typingGameStartBtn"
                 onClick={startGame}
                 disabled={isTimeRunning}
             >

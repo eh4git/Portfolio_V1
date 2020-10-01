@@ -1,4 +1,4 @@
-.typingGameContainer {
+#typingGameContainer {
     background: black;
     color: #00b800;
     margin:0;
@@ -9,10 +9,9 @@
     font-weight: 400;
 }
 
-body {
-}
 
-button {
+
+#typingGameStartBtn {
     font-family: 'Press Start 2P', cursive;
     display: block;
     margin: 0 auto;
@@ -23,16 +22,16 @@ button {
     text-transform: uppercase;
 }
 
-button:disabled {
+#typingGameStartBtn:disabled {
     cursor: not-allowed;
 }
 
-h1 {
+#typingGameHeader {
     font-size: 20px;
     text-align:center;
 }
 
-#typingtextarea {
+#typingGameTextArea {
     font-family: 'Press Start 2P', cursive;
     border: 3px solid black;
     width: 90%;
@@ -43,6 +42,6 @@ h1 {
     padding: 10px;
 }
 
-textarea:disabled {
+#typingGameTextArea:disabled {
     background-color: #a5a2a2;
 }

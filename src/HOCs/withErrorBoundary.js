@@ -1,14 +1,12 @@
 import React, { Component } from "react"
 
 class ErrorBoundary extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
+  state = { 
       hasError: false, 
       error: null,
       errorInfo: null,
     };
-  }
+  
 
   componentDidCatch(error, errorInfo) {
     // You can also log the error to an error reporting service
