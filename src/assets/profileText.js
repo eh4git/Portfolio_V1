@@ -76,6 +76,21 @@ const profileText =
             "deployed":"https://www.onceuaa.com/",
             "image": require("../assets/images/onceUponAnAdventure.png")
         },
+        {
+            "name": "Along With Me",
+            "description": "An application built using React Native that enhances a users experience while reading their favorite literature. Provides the ability for users to trigger sounds that are tied to key words within the text. Key words are highlighted to show users what can be pressed to trigger the corresponding sound.",
+            "repository": "https://github.com/eh4git/Along-With-Me",
+            "deployed":"",
+            "image": require("../assets/images/along-with-me-logo.png")
+        },
+        {
+            "name": "E-Commerce Application",
+            "description": "A React application that provides a basic framework for an e-commerce web application. Users can favorite and add items to a cart. Users can also manage the items in the cart and can place their order",
+            "repository": "https://github.com/eh4git/Scrimba_ECommerce",
+            "deployed":"",
+            "image": require("../assets/images/onceUponAnAdventure.png")
+        },
+
         
     ],
     "resume":

@@ -10,9 +10,12 @@ const Project = (props) => {
                 <h4 className="card-title">{props.name}</h4>
                 <p className="card-text">
                     {props.description}<br />
-                    <div className="projectBtns" >
-                    <a className="btn btn-lg btn-block" target="_blank" href={props.repository}>Github Repository</a>
-                    <a className="btn btn-lg btn-block" target="_blank" href={props.deployed}>Deployed Application</a>    
+                    <div className="projectBtns row" >
+                        <a className="btn btn-lg btn-block col-md-6 projectBtn" target="_blank" href={props.repository}>Github Repository</a>
+                        { props.deployed 
+                            ? <a className="btn btn-lg btn-block col-md-5 projectBtn" target="_blank" href={props.deployed}>Deployed Application</a> 
+                            : <a className="btn btn-lg btn-block col-md-5 projectBtn" disabled>Application Not Deployed</a>
+                        }    
                     </div>
                 </p>
             </div>
