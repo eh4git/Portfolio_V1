@@ -6,7 +6,7 @@ import LandingPage from "./pages/LandingPage"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Profile from "./pages/Profile"
-
+import TypingGame from "./components/typingGame/TypingGame"
 
 function App() {
   return (
@@ -23,6 +23,9 @@ function App() {
         </Route>
         <Route exact path="/">
           <LandingPage />
+        </Route>
+        <Route exact path="/typing">
+          <TypingGame />
         </Route>
       </Switch>
     </Router>

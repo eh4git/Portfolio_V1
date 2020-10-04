@@ -29,7 +29,8 @@ const NavBar = () => {
                         return (
                             <li className="nav-item" key={i}>
                                 <a className="nav-link" href={item.href} rel="noopener noreferrer" target="_blank">
-                                    {item.name}</a>
+                                    {item.name}
+                                </a>
                             </li>
                         )
                     })

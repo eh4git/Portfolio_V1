@@ -141,6 +141,7 @@ body{
 }
 .projectBtns{
   bottom: 10px;
+  justify-content: space-around
 }
 .row {
    margin-right: 0px; 
