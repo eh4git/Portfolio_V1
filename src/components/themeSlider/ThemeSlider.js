@@ -7,9 +7,11 @@ function ThemeSlider() {
    console.log(typeof theme)
     return (
         <div className={"sliderContainer " + theme}>
-            <p className={"sliderText " + theme}>Select A Theme</p>
+            <p className={"sliderText " + theme}>
+                Current Theme: {theme}
+            </p>
             <input 
-                className={"themeSlider" + theme} 
+                className={"themeSlider " + theme} 
                 type="range" 
                 min="1" 
                 max="100" 
