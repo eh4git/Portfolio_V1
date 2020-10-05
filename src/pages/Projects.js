@@ -1,11 +1,8 @@
 import React, {useContext} from "react";
 import NavBar from "../components/NavBar"
 import profileText from "../assets/profileText"
-<<<<<<< HEAD
 import {Context} from "../context/index"
-=======
 import Project from "../components/Project"
->>>>>>> master
 
 const Projects = () => {
     const {theme} = useContext(Context)
