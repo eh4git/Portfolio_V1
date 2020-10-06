@@ -13,14 +13,14 @@ p{
     font-size: larger;
     font-family: 'Cabin', sans-serif;
 }
-h1{
+/* h1{
     font-family: 'Pacifico', cursive;
     color: whitesmoke;
     background-color: rgba(57, 85, 63, 0.75);
     margin-bottom: 0;
     padding: 20px;
     font-size: 46px;
-} 
+}  */
 h2{ 
     font-family: 'Pacifico', cursive;
     margin-bottom: 20px;                  
@@ -190,6 +190,11 @@ body{
   background-color:  rgba(57, 85, 63, 0.75);
   color: whitesmoke;
   margin: 15px 0px;
+}
+.projectBtn {
+  background-color: rgba(57,85,63,.75);
+  color: #f5f5f5;
+  margin: 15px 0;
 }
 /* cool pages effect */
 /* background-color: white;

@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar"
 import Pdf from "../assets/docs/WebDevResume.pdf";
 import profileText from "../assets/profileText"
 import {Context} from "../context/index"
+import Header from "../components/header/Header"
 
 const Contact = () => {
    const {theme} = useContext(Context)
@@ -12,7 +13,7 @@ const Contact = () => {
     return(
         <>
         <NavBar/>
-        <h1>Contact</h1>
+        <Header name="Contact" />
         <div className="contact-form container">
                 <h2 id="contact">Contact Me</h2>
                 {/* <form>

@@ -5,7 +5,7 @@ import withErrorBoundary from "./HOCs/withErrorBoundary"
 import LandingPage from "./pages/LandingPage"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
-import Profile from "./pages/Profile"
+import Profile from "./pages/profile/Profile"
 import TypingGame from "./components/typingGame/TypingGame"
 
 function App() {

@@ -1,0 +1,14 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    background-color: rgba(57, 85, 63, 0.75);
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerText {
+    margin-left: 20px;
+}
