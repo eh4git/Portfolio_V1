@@ -2,13 +2,36 @@
     display: flex;
     flex-direction: row;
     align-content: space-around;
-    font-family: 'Pacifico', cursive;
-    color: whitesmoke;
-    background-color: rgba(57, 85, 63, 0.75);
     padding: 5px;
     justify-content: space-between;
     align-items: center;
 }
 .headerText {
     margin-left: 20px;
+}
+.headerContainer.light {
+    background-color: rgba(214, 216, 214, 0.75);
+}
+.headerContainer.dark {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.headerContainer.refined {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.headerContainer.relaxed {
+    background-color: rgba(57, 85, 63, 0.75); 
+}
+.headerText.light {
+    color: rgb(29, 27, 25)
+}
+.headerText.dark {
+    color: rgb(143, 146, 143)
+}
+.headerText.refined {
+    color: rgb(0, 0, 0);
+}
+.headerText.relaxed {
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    
 }
