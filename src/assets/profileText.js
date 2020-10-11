@@ -100,7 +100,7 @@ const profileText =
     "phone": "760 420-4308",
     "location": "Apple Valley, CA 92308",
 
-    "homePage": "/",
+    "landingPage": "/",
     "profilePage": "/profile",
     "profilePicture": require("../assets/images/Optimized-ProfilePic.jpg"),
     "skills":{

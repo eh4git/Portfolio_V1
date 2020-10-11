@@ -1,14 +1,12 @@
 import React, {useContext} from "react";
-import NavBar from "../../components/NavBar"
+import NavBar from "../../components/navBar/NavBar"
 import AboutMe from "../../components/AboutMe"
 import Skills from "../../components/Skills"
 import Resume from "../../components/Resume"
-import {Context} from "../../context/index"
 import Header from "../../components/header/Header"
 import "./index.css"
 
 const Profile = () => {
-    const {theme} = useContext(Context)
     return (
         <>
             <NavBar />

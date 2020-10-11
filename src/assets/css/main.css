@@ -5,8 +5,7 @@
           box-sizing: border-box;
 }
 
-html,
-body {
+.wrapper {
   margin: 0;
   font-family: "Nunito", sans-serif;
 }

@@ -1,8 +1,17 @@
 /* Google fonts: 
 All text
 font-family: 'Cabin', sans-serif;
-Title text
-font-family: 'Pacifico', cursive; */
+Refined
+font-family: 'Alice', serif;
+Relaxed
+font-family: 'Pacifico', cursive;
+light text
+font-family: 'Chilanka', cursive;
+light
+font-family: 'Nothing You Could Do', cursive;
+dark
+font-family: 'Roboto Slab', serif;
+ */
 @media screen and (min-width: 576px) {
   body {
     margin: 0;
@@ -33,21 +42,21 @@ li{
   display: block;
   font-size: 20px;
 }
-a{
+/* a{
   font-family: 'Cabin', sans-serif;
   font-size:24px;
   font-weight: bold;
   color: rgb(0, 65, 0);
-}
+} */
 
-#navbarNav > ul > li > a:hover{
+/* #navbarNav > ul > li > a:hover{
   font-size: 21px;
 }
 
 #nav > a:hover{
   color: rgb(219, 243, 220);
   font-size: 38px;
-}
+} */
 body{
   background-image: url('../images/bricks-459299_1920.jpg');
   background-repeat: no-repeat;
@@ -106,12 +115,6 @@ body{
   border: solid 4px #997756;
   border-radius: 5px;
   padding: 40px;
-}
-.nav-header{
-  font-size: 36px;
-}
-.navbar{
-  opacity: .8;
 }
 .jumbotron-fluid {
   overflow: auto;
