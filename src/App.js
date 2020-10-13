@@ -4,7 +4,7 @@ import withErrorBoundary from "./HOCs/withErrorBoundary"
 // import Test from "./components/test"
 import LandingPage from "./pages/LandingPage"
 import Projects from "./pages/Projects"
-import Contact from "./pages/Contact"
+import Contact from "./pages/contact/Contact"
 import Profile from "./pages/profile/Profile"
 import TypingGame from "./components/typingGame/TypingGame"
 

@@ -1,8 +1,6 @@
 /* General Styles */
 .aboutMeContainer {
     overflow: auto;
-    padding-right: 0;
-    padding-left: 0;
     background-color: #bec8c0;
     padding: 30px;
     border: solid 4px #997756;

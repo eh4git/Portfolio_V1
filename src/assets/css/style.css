@@ -62,13 +62,13 @@ li{
   color: rgb(219, 243, 220);
   font-size: 38px;
 } */
-body{
+/* body{
   background-image: url('../images/bricks-459299_1920.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   
-}
+} */
 .box{
   background-color: rgba(57, 85, 63, 0.75);
   text-align: center;
@@ -76,10 +76,10 @@ body{
   padding: 25px;
   margin-top: 50px;
 }
-.container {
+/* .container {
   margin-top: 15px;
   margin-bottom: 60px;
-}
+} */
 #borderAdj{
   padding-bottom: 60px;
 }
@@ -113,14 +113,14 @@ body{
   text-align: center;
   opacity: 0.8;
 }
-.contact-form {
+/* .contact-form {
   font-family: "Barlow Condensed";
   background-color: #bec8c0;
   opacity: .85;
   border: solid 4px #997756;
   border-radius: 5px;
   padding: 40px;
-}
+} */
 /* .jumbotron-fluid {
   overflow: auto;
   padding-right: 0;
@@ -163,7 +163,7 @@ body{
   font-size: 46px;
   margin-top: 100px;
 }
-#resumeFrame{
+/* .resumeFrame{
   background-image: url('../images/WebDevResume1.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -172,11 +172,11 @@ body{
   height: 450px;
   transition-delay: 1s;
 }
-#resumeFrame:hover{
+.resumeFrame:hover{
   background-image: url('../images/WebDevResume.jpg');
   height: 450px;
   cursor: grab;
-}
+} */
 
 #root > div > div > div > div > img{
   max-height: 450px;
