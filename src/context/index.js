@@ -7,12 +7,14 @@ function ContextProvider({children}) {
     const [sliderValue, setSliderValue] = useState(1)
     
     const onSliderChange = event => {
-        setSliderValue(event.target.value)
-        sliderValue < 25 ? 
+        const currentValue = event.target.value
+        setSliderValue(currentValue)
+        //setting the slider value ^ is async causing the following conditional to run before the value is set into state. Still set state but use the event value to ensure correct value is being used to set the theme.
+        currentValue < 25 ? 
             setTheme("light") 
-        : sliderValue < 50 ?
+        : currentValue < 50 ?
             setTheme("dark")
-        : sliderValue < 75 ?
+        : currentValue < 75 ?
             setTheme("refined")
         :   setTheme("relaxed")
     }

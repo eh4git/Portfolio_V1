@@ -2,8 +2,9 @@ import React, {useContext} from "react";
 import NavBar from "../components/navBar/NavBar"
 import profileText from "../assets/profileText"
 import {Context} from "../context/index"
-import Project from "../components/Project"
+import Project from "../components/project/Project"
 import Header from "../components/header/Header"
+
 const Projects = () => {
     const {theme} = useContext(Context)
     return (

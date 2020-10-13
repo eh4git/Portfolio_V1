@@ -3,29 +3,33 @@ import profileText from "../../assets/profileText"
 import { Link } from "react-router-dom"
 import {Context} from "../../context/index"
 import "./index.css"
-import { color } from "d3";
-
 
 const NavBar = () => {
-
     const [navClassName, setNavClassName] = useState("navbar navbar-expand-lg navbar-light bg-light")
     const [inLineStyle, setInlineStyle] = useState()
-
     const {theme} = useContext(Context)
 
     useEffect(() => {
-        theme === "light" ? setNavClassName("navbar navbar-expand-lg navbar-light bg-light")
-        : theme === "dark" ? setNavClassName("navbar navbar-expand-lg navbar-dark bg-dark")
-        : theme === "refined" ? setNavClassName("navbar navbar-expand-lg refined")
-        : setNavClassName("navbar navbar-expand-lg relaxed")
+        //uses the light and dark bootstrap pre-built nav bar
+        switch(theme){
+            case "light":
+                setNavClassName("navbar navbar-expand-lg navbar-light bg-light") 
+                setInlineStyle(null)
+                break;
+            case "dark":
+                setNavClassName("navbar navbar-expand-lg navbar-dark bg-dark")
+                setInlineStyle(null)
+                break;
+            case "refined":
+                setNavClassName("navbar navbar-expand-lg refined")
+                setInlineStyle({color: "rgb(255, 255, 255)"})
+                break;
+            default:    
+                setNavClassName("navbar navbar-expand-lg relaxed")
+                setInlineStyle({color: " whitesmoke"})
+                break;
+        }
     },[theme])
-
-    useEffect(() => {
-        theme === "light" ? setInlineStyle(null)
-        : theme === "dark" ? setInlineStyle(null)
-        : theme === "refined" ? setInlineStyle({color: "rgb(255, 255, 255)"})
-        : setInlineStyle({color: " whitesmoke"})
-    },[navClassName])
 
     return (
         <nav id="nav" className={navClassName}>

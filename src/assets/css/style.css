@@ -1,16 +1,21 @@
 /* Google fonts: 
 All text
 font-family: 'Cabin', sans-serif;
-Refined
+Refined header
 font-family: 'Alice', serif;
+Refined text
+font-family: 'Raleway', sans-serif;
 Relaxed
 font-family: 'Pacifico', cursive;
 light text
-font-family: 'Chilanka', cursive;
+font-family: 'Chilanka', cursive; ***too casual...***
+font-family: 'Source Sans Pro', sans-serif;
 light
 font-family: 'Nothing You Could Do', cursive;
-dark
+dark header
 font-family: 'Roboto Slab', serif;
+dark text
+font-family: 'Roboto', sans-serif;
  */
 @media screen and (min-width: 576px) {
   body {
@@ -116,29 +121,19 @@ body{
   border-radius: 5px;
   padding: 40px;
 }
-.jumbotron-fluid {
+/* .jumbotron-fluid {
   overflow: auto;
   padding-right: 0;
   padding-left: 0;
   background-color: #bec8c0;
   padding: 30px;
-  /* opacity: 0.95; */
   border: solid 4px #997756;
   border-radius: 30px;
   margin: auto;
   margin-top: 25px;
   width: 75%;
-}
-.profileSection{
-  background-color: rgba(57, 85, 63, 0.75);
-  display: inline-block;
-  text-align:left;
-  width:  60%;
-  border-radius: 20px;
-  color: whitesmoke;
-  padding: 5px 30px;
-  
-}
+} */
+
 .projectContainer{
   margin: 30px
 }
@@ -150,7 +145,7 @@ body{
    margin-right: 0px; 
    margin-left: 0px; 
 }
-#profilePicture{
+/* .profilePicture{
   border-radius: 50%;
   margin-right: 30px;
   float: left;
@@ -158,7 +153,7 @@ body{
   border-style: outset;
   border-color: burlywood;
   width: 215px;
-}
+} */
 #errMsg{
   font-family: 'Pacifico', cursive;
   color: whitesmoke;

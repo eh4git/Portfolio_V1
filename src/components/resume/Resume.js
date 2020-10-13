@@ -1,6 +1,6 @@
 import React from "react";
 
-import Pdf from "../assets/docs/WebDevResume.pdf";
+import Pdf from "../../assets/docs/WebDevResume.pdf";
 const Resume = () => {
     return (
         <>

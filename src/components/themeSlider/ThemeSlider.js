@@ -4,7 +4,6 @@ import { Context } from "../../context/index"
 
 function ThemeSlider() {
     const { theme, sliderValue, onSliderChange } = useContext(Context)
-    console.log(typeof theme)
     return (
 
         <div className={"sliderContainer " + theme}>

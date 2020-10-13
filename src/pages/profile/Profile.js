@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
 import NavBar from "../../components/navBar/NavBar"
-import AboutMe from "../../components/AboutMe"
-import Skills from "../../components/Skills"
-import Resume from "../../components/Resume"
+import AboutMe from "../../components/aboutMe/AboutMe"
+import Skills from "../../components/skills/Skills"
+import Resume from "../../components/resume/Resume"
 import Header from "../../components/header/Header"
 import "./index.css"
 

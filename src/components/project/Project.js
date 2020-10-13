@@ -1,15 +1,18 @@
-import React from "react"   
+import React, {useContext} from "react"  
+import { Context } from "../../context/index"
+import "./index.css" 
 
 const Project = (props) => {  
+    const { theme } = useContext(Context)
     return(
-        <div className="col-md-6 card">
-        <div className="cardContainer">
-            <img src={props.image} className="card-img-top" alt={props.name} />
-            <div className="card-body">
-                <h4 className="card-title">{props.name}</h4>
-                <p className="card-text">
+        <div className={"col-md-6 card " + theme}>
+            <div className="cardContainer">
+                <img src={props.image} className="card-img-top" alt={props.name} />
+                <div className="card-body">
+                    <h4 className="card-title">{props.name}</h4>
+                    <p className="card-text">
                     {props.description}
-                </p>
+                    </p>
                     <div className="projectBtns row" >
                         <a className="btn btn-lg btn-block col-md-6 projectBtn" target="_blank" href={props.repository}>Github Repository</a>
                         { props.deployed 
@@ -17,9 +20,9 @@ const Project = (props) => {
                             : <a className="btn btn-lg btn-block col-md-5 projectBtn" disabled>Application Not Deployed</a>
                         }    
                     </div>
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 export default Project
