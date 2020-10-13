@@ -22,7 +22,12 @@ class ErrorBoundary extends Component {
     const Component = this.props.component
     console.log(this.props)
     return (
-      this.state.hasError ? <h1 id='errMsg'>OOOps...Something went wrong...</h1> : <Component />
+      this.state.hasError ? (
+        <div>
+          <h1 id='errMsg'>OOOps...Something went wrong...</h1>
+          <h3>I must be currently preforming maintenance, I will have the site back up and running soon. Please check back shortly </h3>
+        </div>) 
+      : <Component />
     )
   }
 }

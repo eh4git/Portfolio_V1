@@ -1,6 +1,3 @@
-import React from "react"
-import { Link } from "react-router-dom";
-
 const profileText =
 {
     "aboutMe": "My name is Erik Hirsch, I am a full stack developer who incorporates technical ability with collaborative skills to produce innovative web and mobile applications. I truly enjoy collaborating and team environments and I have a passion for learning and problem solving. A few of my technical skills include HTML, CSS, JavaScript, JQuery, ES6, Node, MySQL, MongoDB, React, React Native, and Redux. I completed the Web Development Coding Boot Camp at UCLA Extension. The course has given me a solid foundation of technical skills as well as improved my ability to adapt to and learn new ideas and concepts. I am excited to transition into a new career that will challenge me and help me to develop my skills. ",
@@ -63,7 +60,7 @@ const profileText =
             "image": require("../assets/images/WeatherDashboard4.png")
         },
         {
-            "name": "Story Time Adventure Application",
+            "name": "Story Time Adventure",
             "description": "In this application that I created, in collaboration with fellow students, the user is able to create an account and sign in using a password that is encrypted and stored in a database. After signing in the user can add children to their account and provide information specific to each child. The user can then create a unique story that incorporates the information for the child.",
             "repository": "https://github.com/eh4git/StoryTime",
             "deployed":"https://fathomless-waters-70908.herokuapp.com/",
@@ -103,7 +100,7 @@ const profileText =
     "phone": "760 420-4308",
     "location": "Apple Valley, CA 92308",
 
-    "homePage": "/",
+    "landingPage": "/",
     "profilePage": "/profile",
     "profilePicture": require("../assets/images/Optimized-ProfilePic.jpg"),
     "skills":{
