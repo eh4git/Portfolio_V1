@@ -2,9 +2,7 @@
     overflow: auto;
     padding-right: 0;
     padding-left: 0;
-    background-color: #bec8c0;
     padding: 30px;
-    border: solid 4px #997756;
     border-radius: 30px;
     margin: auto;
     margin-top: 50px;
@@ -29,7 +27,7 @@
     cursor: grab;
 }
 
-  /* refined Theme */
+  /* Light Theme */
 .resumeContainer.light {
     background-color: rgb(255, 255, 255, .9);
     border: solid 6px rgba(162, 187, 189, 0.75);

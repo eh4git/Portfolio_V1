@@ -1,18 +1,19 @@
 import React, {useContext} from "react";
-import NavBar from "../components/navBar/NavBar"
-import profileText from "../assets/profileText"
-import {Context} from "../context/index"
-import Project from "../components/project/Project"
-import Header from "../components/header/Header"
+import NavBar from "../../components/navBar/NavBar"
+import profileText from "../../assets/profileText"
+import {Context} from "../../context/index"
+import Project from "../../components/project/Project"
+import Header from "../../components/header/Header"
+import "./index.css"
 
 const Projects = () => {
     const {theme} = useContext(Context)
     return (
-        <div>
+        <div className={"projectsContainer " + theme}>
             <NavBar />
             <Header name="Projects"/>
             
-            <div className="row projectContainer">
+            <div className={"row projectContainer " + theme}>
                 {profileText.projects.map((item, i) => 
                     <Project 
                         key={i}

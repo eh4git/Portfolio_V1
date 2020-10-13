@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import withErrorBoundary from "./HOCs/withErrorBoundary"
 // import Test from "./components/test"
 import LandingPage from "./pages/LandingPage"
-import Projects from "./pages/Projects"
+import Projects from "./pages/projects/Projects"
 import Contact from "./pages/contact/Contact"
 import Profile from "./pages/profile/Profile"
 import TypingGame from "./components/typingGame/TypingGame"

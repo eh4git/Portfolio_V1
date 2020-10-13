@@ -60,7 +60,7 @@ const profileText =
             "image": require("../assets/images/WeatherDashboard4.png")
         },
         {
-            "name": "Story Time Adventure Application",
+            "name": "Story Time Adventure",
             "description": "In this application that I created, in collaboration with fellow students, the user is able to create an account and sign in using a password that is encrypted and stored in a database. After signing in the user can add children to their account and provide information specific to each child. The user can then create a unique story that incorporates the information for the child.",
             "repository": "https://github.com/eh4git/StoryTime",
             "deployed":"https://fathomless-waters-70908.herokuapp.com/",
