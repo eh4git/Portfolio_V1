@@ -25,5 +25,4 @@ function ContextProvider({children}) {
         </Context.Provider>
     )
 }
-
 export {ContextProvider, Context}
