@@ -85,7 +85,7 @@ const profileText =
             "description": "A React application that provides a basic framework for an e-commerce web application. Users can favorite and add items to a cart. Users can also manage the items in the cart and can place their order",
             "repository": "https://github.com/eh4git/Scrimba_ECommerce",
             "deployed":"",
-            "image": require("../assets/images/onceUponAnAdventure.png")
+            "image": require("../assets/images/Ecommerce.png")
         },
 
         
@@ -104,7 +104,7 @@ const profileText =
     "profilePage": "/profile",
     "profilePicture": require("../assets/images/Optimized-ProfilePic.jpg"),
     "skills":{
-        technical:['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'MySQL', 'MongoDB', 'Ajax', 'Express', 'Nodejs', 'React', 'React Native', 'Redux', 'Bootstrap', ],
+        technical:['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'MySQL', 'MongoDB', 'Ajax', 'Express', 'Nodejs', 'React', 'React Native', 'Redux', 'Bootstrap', 'Git' ],
         other:["Communication", "Teamwork", "Leadership", "Reliable", "Strong Work Ethic", "Adaptable"]
     }
 }
