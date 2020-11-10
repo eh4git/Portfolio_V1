@@ -9,6 +9,7 @@ import "./index.css"
 
 const Profile = () => {
     const { theme } = useContext(Context)
+    
     return (
         <div className={"profileContainer " + theme}>
             <NavBar />
