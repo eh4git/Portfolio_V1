@@ -4,11 +4,12 @@ import { Context } from "../../context/index"
 
 function ThemeSlider() {
     const { theme, sliderValue, onSliderChange } = useContext(Context)
+    const themeCapitalized = theme.charAt(0).toUpperCase() + theme.slice(1)
     return (
 
         <div className={"sliderContainer " + theme}>
             <p className={"sliderText " + theme}>
-                Current Theme: {theme}
+                Current Theme: {themeCapitalized}
             </p>
             <input
                 className={"themeSlider " + theme}
