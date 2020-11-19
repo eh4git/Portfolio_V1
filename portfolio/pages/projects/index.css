@@ -1,0 +1,19 @@
+.projectsContainer{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+}
+.projectsContainer.light {
+    background-image: url('../../assets/images/lightClouds.jpg');
+}
+.projectsContainer.dark {
+    background-image: url('../../assets/images/milky-way-darkSky.jpg');
+}
+.projectsContainer.refined {
+    background-image: url('../../assets/images/buildings.jpg');
+}
+.projectsContainer.relaxed {
+    background-image: url('../../assets/images/bricks-459299_1920.jpg');
+}

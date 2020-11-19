@@ -1,0 +1,78 @@
+/* General Styling */
+#nav.navbar.navbar-expand-lg {
+    opacity: .9;   
+}
+.nav-item {
+    margin-left: 15px;
+}
+.nav-link {
+    font-size: 30px;
+    font-weight: bold;
+}
+#nav > a.nav-header {
+    font-size: 36px;
+    font-weight: bold;
+}                            
+.nav-link:hover {
+    font-size: 32px;
+}
+#nav.navbar.navbar-expand-lg.refined {
+    background-color: black
+    
+}
+#nav.navbar.navbar-expand-lg.relaxed {
+    background-color:  rgb(75, 44, 13);
+    
+}
+
+/* Light Theme */
+#nav > a.nav-header.light {
+    font-family: 'Nothing You Could Do', cursive;
+}  
+
+.nav-link.light {
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.nav-link.light:hover {
+    color: rgb(110, 110, 110)!important;
+}
+
+/* Dark Theme */
+#nav > a.nav-header.dark {
+    font-family: 'Roboto Slab', serif;
+}  
+
+.nav-link.dark {
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-link.dark:hover {
+    color: rgb(233, 233, 233)!important;
+}
+
+/* Refined Theme */
+#nav > a.nav-header.refined {
+    font-family: 'Alice', serif;
+}  
+
+.nav-link.refined {
+    font-family: 'Alice', serif;
+}
+
+.nav-link.refined:hover {
+    color:rgb(192,192,192)!important;
+}
+
+/* Relaxed Theme */
+#nav > a.nav-header.relaxed {
+    font-family: "Nunito", sans-serif;
+}  
+
+.nav-link.relaxed {
+    font-family: "Nunito", sans-serif;
+}
+
+.nav-link.relaxed:hover {
+    color: rgba(153, 228, 171, 0.75)!important;
+}

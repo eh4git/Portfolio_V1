@@ -1,65 +1,48 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from "react";
+import Link from 'next/link'
+// import Pdf from "/assets/docs/WebDevResume.pdf";
+// import Docx from "/assets/docs/WebDevResume.docx"
+import profileText from "../profileText"
+// import '../assets/css/main.css';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+function LandingPage(props) {
+ const onPdfClick = ()=> {
+    window.open('../public/assets/docs/WebDevResume.pdf');
+  }
+  const onDocxClick = ()=> {
+    window.location.replace(Docx);
+  }
+return (
+    <div className="wrapper">
+      <section className="parallax-container">
+        <div className="parallax">
+          <div className="logo">
+            <div className="line topLine"></div>
+            <div className="content">
+              <div className="vintage name">Erik Hirsch</div>
+              <div className="since">- Est. 2020 -</div>
+              <div className="desc">Full-Stack Web Developer</div>
+              <div className="skillz">HTML&nbsp;+&nbsp;CSS&nbsp;+&nbsp;JS</div>
+              <div className="links">
+                <a target="_blank" rel="noopener noreferrer" href={profileText.profiles[0].href}><i
+                  className="fa fa-linkedin-square"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href={profileText.profiles[1].href}><i className="fa fa-github"></i></a>
+                <a target="_blank" rel="noopener noreferrer" onClick={onPdfClick}><i className="fa fa-file-pdf-o"></i></a>
+                <a target="_blank" rel="noopener noreferrer" onClick={onDocxClick}><i className="fa fa-file-word-o"></i></a>
+                {/* <a target="_blank" href={profileText.profiles[2].href}><i className="fa fa-codepen"></i></a> */}
+              </div>
+            </div>
+            <div className="line bottomLine"></div>
+            <div id="buttonInsertSpace">
+           <Link id='viewProfileBtn' href={profileText.profileSections[0].href}>View Profile</Link>
+            </div>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </section>
     </div>
   )
+
 }
+  
+export default LandingPage;
+
