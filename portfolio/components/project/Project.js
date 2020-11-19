@@ -1,5 +1,6 @@
 import React, {useContext} from "react"  
 import { Context } from "../../context/index"
+import Image from 'next/image'
 // import "./index.css" 
 
 const Project = (props) => {  
@@ -7,10 +8,12 @@ const Project = (props) => {
     return(
         <div className={"projectContainer col-md-6 card " + theme}>
             <div className={"cardContainer " + theme}>
-                <img 
+                <Image
                     src={props.image} 
                     className={"projectImage card-img-top " + theme} 
                     alt={props.name} 
+                    width={250}
+                    height={250}
                 />
                 <div className="projectTextContainer card-body">
                     <h4 className={"card-title projectHeader " + theme}>{props.name}</h4>
