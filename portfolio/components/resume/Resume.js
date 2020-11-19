@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../../context/index"
 // import "./index.css"
 
-// import Pdf from "../../public/assets/docs/WebDevResume.pdf";
+import Pdf from "../../public/assets/docs/WebDevResume.pdf";
 
 const Resume = () => {
     const { theme } = useContext(Context)
@@ -15,10 +15,10 @@ const Resume = () => {
                     target="_blank"
                     onClick={() => {
                         console.log("Need to figure out pdf import or work-around")
-                        // window.open(Pdf);
+                        window.open(Pdf);
                     }}
                 >
-                    <div className={"resumeFrame " + theme}></div>
+                    <div className={"resumeFrame " + theme} style={{height: '300px'}}></div>
                 </a>
             </div>
         </>

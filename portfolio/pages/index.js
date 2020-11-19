@@ -1,13 +1,13 @@
 import React from "react";
 import Link from 'next/link'
-// import Pdf from "/assets/docs/WebDevResume.pdf";
-// import Docx from "/assets/docs/WebDevResume.docx"
+import Pdf from "../public/assets/docs/WebDevResume.pdf";
+import Docx from "../public/assets/docs/WebDevResume.docx"
 import profileText from "../profileText"
 // import '../assets/css/main.css';
 
 function LandingPage(props) {
  const onPdfClick = ()=> {
-    window.open('../public/assets/docs/WebDevResume.pdf');
+    window.open(Pdf);
   }
   const onDocxClick = ()=> {
     window.location.replace(Docx);
