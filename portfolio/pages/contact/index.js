@@ -4,20 +4,65 @@ import NavBar from "../../components/navBar/NavBar"
 import profileText from "../../profileText"
 import {Context} from "../../context/index"
 import Header from "../../components/header/Header"
-// import "./index.css"
+import contactStyle from './contactStyles.module.css'
 
 const Contact = () => {
+
    const {theme} = useContext(Context)
+
+function createClassName(theme, className){
+    let name;
+    theme === 'light' ? name = `${contactStyle.light}${className}` 
+    : theme === 'dark' ? name = contactStyle.dark + className
+    : theme === 'refined' ? name = contactStyle.refined + className
+    : name = contactStyle.relaxed + className
+    return name;
+}
+
+let contactContainerCN;
+let contactFormContainerCN;
+let contactHeaderCN;
+let contactEmailCN;
+let contactTextCN;
+   theme === 'light' ? (
+       contactContainerCN = contactStyle.lightContainer, contactFormContainerCN = contactStyle.lightContactFormContainer,
+       contactHeaderCN = contactStyle.lightContactHeader,
+       contactEmailCN = contactStyle.lightContactEmail,
+       contactEmailCN = contactStyle.lightContactEmail
+       )
+   : theme === 'dark' ? (
+       contactContainerCN = contactStyle.darkContainer,
+       contactFormContainerCN = contactStyle.darkContactFormContainer,
+       contactHeaderCN = contactStyle.darkContactHeader,
+       contactEmailCN = contactStyle.darkContactEmail,
+       contactEmailCN = contactStyle.darkContactEmail
+       )
+   : theme === 'refined' ? (
+       contactContainerCN = contactStyle.refinedContainer,
+       contactFormContainerCN = contactStyle.refinedContactFormContainer,
+       contactHeaderCN = contactStyle.refinedContactHeader,
+       contactEmailCN = contactStyle.refinedContactEmail,
+       contactEmailCN = contactStyle.refinedContactEmail
+    )
+   : (
+       contactContainerCN = contactStyle.relaxedContainer,
+       contactFormContainerCN = contactStyle.relaxedContactFormContainer,
+       contactHeaderCN = contactStyle.relaxedContactHeader,
+       contactEmailCN = contactStyle.relaxedContactEmail,
+       contactEmailCN = contactStyle.relaxedContactEmail
+    )
+
      const onResumeClick= ()=> {
          console.log("need to fix pdf import or find work-around")
     //   window.open(Pdf);
     }
+
     return(
-        <div className={"contactContainer " + theme}>
+        <div className={`${contactStyle.contactContainer} ${contactContainerCN}`}>
             <NavBar/>
             <Header name="Contact" />
-            <div className={"contact-form contactFormContainer " + theme}>
-                    <h2 className={"contactHeader " + theme}>Contact Me</h2><br />
+            <div className={`${contactStyle.contactFormContainer} ${contactFormContainerCN}`}>
+                    <h2 className={`${contactStyle.contactHeader} ${contactHeaderCN}`}>Contact Me</h2><br />
                     {/* <form>
                     <div className="form-group">
                         <label for="contactNameText">Name</label>
@@ -36,8 +81,8 @@ const Contact = () => {
                     <button type="submit" id="contactFormBtn" className="btn btn-primary">Submit</button>
                 </form> */}
 
-                    <a className={"contactEmail " + theme} href={`mailto: ${profileText.email}?subject=I saw your profile`}>{profileText.email}</a>
-                <p className={"contactText " + theme}>{profileText.phone} <br/>
+                    <a className={`${contactStyle.contactEmail} ${contactEmailCN}`} href={`mailto: ${profileText.email}?subject=I saw your profile`}>{profileText.email}</a>
+                <p className={`${contactStyle.contactText} ${contactTextCN}`}>{profileText.phone} <br/>
                 {profileText.location}
                 </p>
                 {/* <a onClick={onResumeClick} target="_blank" >My Resume</a> */}

@@ -1,19 +1,19 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import profileText from "../../profileText"
 import Link from 'next/link'
-import {Context} from "../../context/index"
-// import "./index.css"
+import { Context } from "../../context/index"
+import navBarStyle from "./navBarStyle.module.css"
 
 const NavBar = () => {
     const [navClassName, setNavClassName] = useState("navbar navbar-expand-lg navbar-light bg-light")
     const [inLineStyle, setInlineStyle] = useState()
-    const {theme} = useContext(Context)
+    const { theme } = useContext(Context)
 
     useEffect(() => {
         //uses the light and dark bootstrap pre-built nav bar
-        switch(theme){
+        switch (theme) {
             case "light":
-                setNavClassName("navbar navbar-expand-lg navbar-light bg-light") 
+                setNavClassName("navbar navbar-expand-lg navbar-light bg-light")
                 setInlineStyle(null)
                 break;
             case "dark":
@@ -22,18 +22,40 @@ const NavBar = () => {
                 break;
             case "refined":
                 setNavClassName("navbar navbar-expand-lg refined")
-                setInlineStyle({color: "rgb(255, 255, 255)"})
+                setInlineStyle({ color: "rgb(255, 255, 255)" })
                 break;
-            default:    
+            default:
                 setNavClassName("navbar navbar-expand-lg relaxed")
-                setInlineStyle({color: " whitesmoke"})
+                setInlineStyle({ color: " whitesmoke" })
                 break;
         }
-    },[theme])
+    }, [theme])
+
+    let navContainerCN;
+    let navHeaderCN;
+    let navLinkCN;
+    theme === 'light' ? (
+        navHeaderCN = navBarStyle.lightNavHeader,
+        navLinkCN = navBarStyle.lightNavLink
+    )
+        : theme === 'dark' ? (
+            navHeaderCN = navBarStyle.darkNavHeader,
+            navLinkCN = navBarStyle.darkNavLink
+        )
+            : theme === 'refined' ? (
+                navHeaderCN = navBarStyle.refinedNavHeader,
+                navLinkCN = navBarStyle.refinedNavLink,
+                navContainerCN = navBarStyle.refinedNavContainer
+            )
+                : (
+                    navHeaderCN = navBarStyle.relaxedNavHeader,
+                    navLinkCN = navBarStyle.relaxedNavLink,
+                    navContainerCN = navBarStyle.relaxedNavContainer
+                )
 
     return (
-        <nav id="nav" className={navClassName}>
-            <a className={"navbar-brand nav-header " + theme} href={profileText.landingPage} style={inLineStyle}>{profileText.name}</a>
+        <nav className={`${navBarStyle.navBarContainer} ${navContainerCN} ${navClassName}`}>
+            <a className={`${navBarStyle.navHeader} ${navHeaderCN} navbar-brand nav-header`} href={profileText.landingPage} style={inLineStyle}>{profileText.name}</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -42,9 +64,11 @@ const NavBar = () => {
                 <ul className="navbar-nav">
                     {profileText.profileSections.map((item, i) => {
                         return (
-                            <li className={"nav-item active" + theme} key={i}>
-                                <Link className={"nav-link " + theme} href={item.href} style={inLineStyle}>
-                                    {item.name}
+                            <li className={`${navBarStyle.navItem} nav-item active`} key={i}>
+                                <Link href={item.href} >
+                                    <a style={inLineStyle} className={`${navBarStyle.navLink} ${navLinkCN} nav-link`}>
+                                        {item.name}
+                                    </a>
                                 </Link>
                             </li>
                         )
@@ -52,8 +76,8 @@ const NavBar = () => {
                     }
                     {profileText.profiles.map((item, i) => {
                         return (
-                            <li className={"nav-item " + theme} key={i} >
-                                <a className={"nav-link " + theme} href={item.href} rel="noopener noreferrer" target="_blank" style={inLineStyle}>
+                            <li className={`${navBarStyle.navItem} nav-item`} key={i} >
+                                <a className={`${navBarStyle.navLink} ${navLinkCN} nav-link`} href={item.href} rel="noopener noreferrer" target="_blank" style={inLineStyle}>
                                     {item.name}
                                 </a>
                             </li>

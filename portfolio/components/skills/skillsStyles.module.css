@@ -1,108 +1,97 @@
-/* General Styles */
-.aboutMeContainer {
+.skillsContainer {
     overflow: auto;
+    padding-right: 0;
+    padding-left: 0;
     background-color: #bec8c0;
     padding: 30px;
     border: solid 4px #997756;
     border-radius: 30px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 50px;
     width: 75%;
-} 
-.aboutMeHeader {
+}
+.skillsHeader {
     display: inline-block;
     width:  60%;
     padding:10px 30px;
-     
 }
-.profilePicture {
-    margin-right: 30px;
-    float: left;
-    vertical-align: middle;
-    width: 250px;
-  }
-.portfolioparagraph {
-    font-size: 22px;
-}
+
 /* Light Theme */
-.aboutMeContainer.light {
+.lightSkillsContainer {
     background-color: rgb(255, 255, 255, .9);
     border: solid 6px rgba(162, 187, 189, 0.75);
     border-radius: 50px;
-} 
-.aboutMeHeader.light {
+}
+.lightSkillsHeader {
     background-color:rgba(162, 187, 189, 0.75);
     font-family: 'Nothing You Could Do', cursive;
-    font-weight: bold;    
+    font-weight: bold; 
     border-radius: 50px;
     color: rgb(29, 27, 25);
 }
-.profilePicture.light {
-    border-radius: 50%;
-    border: 5px inset rgba(162, 187, 189, 0.75);
-  }
-.portfolioparagraph.light {
+.lightSkillsSubHeader {
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+}
+.lightSkill {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
 }
 
 /* Dark Theme */
-.aboutMeContainer.dark {
+.darkSkillsContainer {
     background-color:rgb(138, 138, 138);
     border: solid 4px rgb(0, 0, 0, .75);
     border-radius: 30px;
-} 
-.aboutMeHeader.dark {
+}
+.darkSkillsHeader {
     background-color: rgba(0, 0, 0, 0.75);
     font-family: 'Roboto Slab', serif;
     border-radius: 20px;
     color: whitesmoke; 
 }
-.profilePicture.dark {
-    border-radius: 20%;
-    border: 4px solid rgb(0, 0, 0, .75);
-  }
-.portfolioparagraph.dark {
+.darkSkillsSubHeader {
+    font-family: 'Roboto Slab', serif;
+}
+.darkSkill {
     font-family: 'Roboto', sans-serif;
 }
 
 /* Refined Theme */
-.aboutMeContainer.refined {
+.refinedSkillsContainer {
     background-color: #ffffff;
     border: solid 2px #000000;
     border-radius: 5px;
-} 
-.aboutMeHeader.refined {
+}
+.refinedSkillsHeader {
     font-family: 'Alice', serif;
     background-color: rgba(0, 0, 0);
     border-radius: 5px;
     color: rgb(255, 255, 255); 
 }
-.profilePicture.refined {
-    border-radius: 5px;
-    border: outset 1px rgb(0, 0, 0);
-  }
-.portfolioparagraph.refined {
+.refinedSkillsSubHeader {
+    font-family: 'Alice', serif;
+}
+.refinedSkill {
     font-family: 'Raleway', sans-serif;
 }
 
 /* Relaxed Theme */
-.aboutMeContainer.relaxed {
+.relaxedSkillsContainer {
     background-color:rgba(213, 224, 216, 0.95);
     border: solid 4px rgb(153, 119, 86);
     border-radius: 30px;
-} 
-.aboutMeHeader.relaxed {
-    font-family: 'Pacifico', cursive;
+}
+.relaxedSkillsHeader {
     background-color: rgba(57, 85, 63, 0.75);
+    font-family: 'Pacifico', cursive;
     border-radius: 20px;
     color: whitesmoke; 
 }
-.profilePicture.relaxed {
-    border-radius: 25%;
-    border-style: outset;
-    border-color: burlywood;
-  }
-.portfolioparagraph.relaxed {
+.relaxedSkillsSubHeader {
+    font-family: 'Pacifico', cursive;
+}
+.relaxedSkill {
     font-family: 'Chilanka', cursive;
     font-weight: bold;
 }

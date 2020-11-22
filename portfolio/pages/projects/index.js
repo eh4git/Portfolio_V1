@@ -4,12 +4,20 @@ import profileText from "../../profileText"
 import {Context} from "../../context/index"
 import Project from "../../components/project/Project"
 import Header from "../../components/header/Header"
-// import "./index.css"
+import projectsStyle from './projectsStyle.module.css'
 
 const Projects = () => {
+
     const {theme} = useContext(Context)
+
+    let projectsContainerCN;
+    theme === 'light' ? projectsContainerCN = projectsStyle.light 
+    : theme === 'dark' ? projectsContainerCN = projectsStyle.dark
+    : theme === 'refined' ? projectsContainerCN = projectsStyle.refined
+    : projectsContainerCN = projectsStyle.relaxed
+
     return (
-        <div className={"projectsContainer " + theme}>
+        <div className={`${projectsStyle.projectsContainer} ${projectsContainerCN}`}>
             <NavBar />
             <Header name="Projects"/>
             

@@ -30,96 +30,96 @@
 }
 
 /* Light Theme */
-.contactContainer.light {
-    background-image: url('../../assets/images/lightClouds.jpg');
+.lightContainer {
+    background-image: url('../../public/assets/images/lightClouds.jpg');
 }
-.contactFormContainer.light {
+.lightContactFormContainer {
     background-color: rgb(255, 255, 255, .9);
     border: solid 6px rgba(162, 187, 189, 0.75);
     border-radius: 50px;
 }
-.contactHeader.light {
+.lightContactHeader {
     background-color:rgba(162, 187, 189, 0.75);
     font-family: 'Nothing You Could Do', cursive;
     font-weight: bold; 
     border-radius: 50px;
     color: rgb(29, 27, 25);
 }
-.contactEmail.light {
+.lightContactEmail {
     font-family: 'Source Sans Pro', sans-serif;  
     color: rgba(162, 187, 189, 0.75);
 }
-.contactText.light {
+.lightContactText{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Dark Theme */
-.contactContainer.dark {
-    background-image: url('../../assets/images/milky-way-darkSky.jpg');
+.darkContainer {
+    background-image: url('../../public/assets/images/milky-way-darkSky.jpg');
 }
-.contactFormContainer.dark {
+.darkContactFormContainer {
     background-color:rgb(138, 138, 138);
     border: solid 4px rgb(0, 0, 0, .75);
     border-radius: 30px;
 }
-.contactHeader.dark {
+.darkContactHeader {
     background-color: rgba(0, 0, 0, 0.75);
     font-family: 'Roboto Slab', serif;
     border-radius: 20px;
     color: whitesmoke;
 }
-.contactEmail.dark {
+.darkContactEmail {
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0, .75);
 }
-.contactText.dark {
+.darkContactText {
     font-family: 'Roboto', sans-serif;
 }
 
 /* Refined Theme */
-.contactContainer.refined {
-    background-image: url('../../assets/images/buildings.jpg');
+.refinedContainer {
+    background-image: url('../../public/assets/images/buildings.jpg');
 }
-.contactFormContainer.refined {
+.refinedContactFormContainer {
     background-color: #ffffff;
     border: solid 2px #000000;
     border-radius: 5px;
 }
-.contactHeader.refined {
+.refinedContactHeader {
     font-family: 'Alice', serif;
     background-color: rgba(0, 0, 0);
     border-radius: 5px;
     color: rgb(255, 255, 255);
 }
-.contactEmail.refined {
+.refinedContactEmail {
     font-family: 'Raleway', sans-serif;
     color: #000000;
 }
-.contactText.refined {
+.refinedContactText {
     font-family: 'Raleway', sans-serif;
 }
 
 /* RelaxedTheme */
-.contactContainer.relaxed {
-    background-image: url('../../assets/images/bricks-459299_1920.jpg');
+.relaxedContainer {
+    background-image: url('../../public/assets/images/bricks-459299_1920.jpg');
 }
-.contactFormContainer.relaxed {
+.relaxedContactFormContainer {
     background-color:rgba(213, 224, 216, 0.95);
     border: solid 4px rgb(153, 119, 86);
     border-radius: 30px;
 }
-.contactHeader.relaxed {
+.relaxedContactHeader {
     background-color: rgba(57, 85, 63, 0.75);
     font-family: 'Pacifico', cursive;
     border-radius: 20px;
     color: whitesmoke;
 }
-.contactEmail.relaxed {
+.relaxedContactEmail {
     font-family: 'Chilanka', cursive;
     font-weight: bold;
     color:  rgb(153, 119, 86);
 }
-.contactText.relaxed {
+.relaxedContactText {
     font-family: 'Chilanka', cursive;
     font-weight: bold;
 }

@@ -5,13 +5,20 @@ import Skills from "../../components/skills/Skills"
 import Resume from "../../components/resume/Resume"
 import Header from "../../components/header/Header"
 import {Context}  from "../../context/index"
-// import "./index.css"
+import profileStyle from "./profileStyle.module.css"
 
 const Profile = () => {
+
     const { theme } = useContext(Context)
     
+    let profileContainerCN;
+    theme === 'light' ? profileContainerCN = profileStyle.light 
+    : theme === 'dark' ? profileContainerCN = profileStyle.dark
+    : theme === 'refined' ? profileContainerCN = profileStyle.refined
+    : profileContainerCN = profileStyle.relaxed
+
     return (
-        <div className={"profileContainer " + theme}>
+        <div className={`${profileStyle.profileContainer} ${profileContainerCN}`}>
             <NavBar />
             <Header name="Profile"/>
             <div className='row'>

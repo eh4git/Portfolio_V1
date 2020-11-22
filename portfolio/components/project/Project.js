@@ -1,44 +1,80 @@
-import React, {useContext} from "react"  
+import React, { useContext } from "react"
 import { Context } from "../../context/index"
 import Image from 'next/image'
-// import "./index.css" 
+import projectStyle from "./projectStyles.module.css"
 
-const Project = (props) => {  
+const Project = (props) => {
+
     const { theme } = useContext(Context)
-    return(
-        <div className={"projectContainer col-md-6 card " + theme}>
-            <div className={"cardContainer " + theme}>
+
+    let cardContainerCN;
+    let projectImageCN;
+    let projectHeaderCN;
+    let cardTextCN;
+    let projectBtnCN;
+    theme === 'light' ? (
+        cardContainerCN = projectStyle.lightCardContainer,
+        projectImageCN = projectStyle.lightProjectImage,
+        projectHeaderCN = projectStyle.lightProjectHeader,
+        cardTextCN = projectStyle.lightCardText,
+        projectBtnCN = projectStyle.lightProjectBtn
+    )
+        : theme === 'dark' ? (
+            cardContainerCN = projectStyle.darkCardContainer,
+            projectImageCN = projectStyle.darkProjectImage,
+            projectHeaderCN = projectStyle.darkProjectHeader,
+            cardTextCN = projectStyle.darkCardText,
+            projectBtnCN = projectStyle.darkProjectBtn
+        )
+            : theme === 'refined' ? (
+                cardContainerCN = projectStyle.refinedCardContainer,
+                projectImageCN = projectStyle.refinedProjectImage,
+                projectHeaderCN = projectStyle.refinedProjectHeader,
+                cardTextCN = projectStyle.refinedCardText,
+                projectBtnCN = projectStyle.refinedProjectBtn
+            )
+                : (
+                    cardContainerCN = projectStyle.relaxedCardContainer,
+                    projectImageCN = projectStyle.relaxedProjectImage,
+                    projectHeaderCN = projectStyle.relaxedProjectHeader,
+                    cardTextCN = projectStyle.relaxedCardText,
+                    projectBtnCN = projectStyle.relaxedProjectBtn
+                )
+
+    return (
+        <div className="projectContainer col-md-6 card ">
+            <div className={`${projectStyle.cardContainer} ${cardContainerCN}`}>
                 <Image
-                    src={props.image} 
-                    className={"projectImage card-img-top " + theme} 
-                    alt={props.name} 
-                    width={250}
-                    height={250}
+                    src={props.image}
+                    className={projectImageCN}
+                    alt={props.name}
+                    width={300}
+                    height={300}
                 />
-                <div className="projectTextContainer card-body">
-                    <h4 className={"card-title projectHeader " + theme}>{props.name}</h4>
-                    <p className={"card-text " + theme}>
-                    {props.description}
+                <div className={`${projectStyle.projectTextContainer} card-body`}>
+                    <h4 className={`${projectStyle.projectHeader} ${projectHeaderCN} card-title`}>{props.name}</h4>
+                    <p className={`${cardTextCN} card-text`}>
+                        {props.description}
                     </p>
-                    <div className={"projectBtns row " + theme} >
-                        <a 
-                            className={"btn btn-lg col-md-5 projectBtn " + theme} 
-                            target="_blank" 
+                    <div className="row" >
+                        <a
+                            className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
+                            target="_blank"
                             href={props.repository}>Github Repository
                         </a>
-                        { props.deployed 
-                            ? <a 
-                                className={"btn btn-lg col-md-5 projectBtn " + theme} 
-                                target="_blank" 
+                        {props.deployed
+                            ? <a
+                                className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
+                                target="_blank"
                                 href={props.deployed}
                             >
                                 Deployed Application
-                            </a> 
-                            : <a 
-                                className={"btn btn-lg col-md-5 projectBtn " + theme} 
+                            </a>
+                            : <a
+                                className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
                                 disabled>Application Not Deployed
                             </a>
-                        }    
+                        }
                     </div>
                 </div>
             </div>

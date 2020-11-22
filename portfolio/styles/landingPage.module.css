@@ -307,14 +307,9 @@
   font-family: "Roboto Slab";
   font-size: 20px;
   margin-top: 25px;
-  font-size: 21px;
   text-align: center;
-  -webkit-animation: fadeIn 10s;
-  /* Safari, Chrome and Opera > 12.1 */
-  /* Firefox < 16 */
-  /* Internet Explorer */
-  /* Opera < 12.1 */
-  animation: fadein 10s;
+  -webkit-animation: fadeIn 8s;
+  animation: fadein 8s;
 }
 
 .buttonInsertSpace {
