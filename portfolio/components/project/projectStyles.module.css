@@ -87,6 +87,10 @@
     border-radius: 20px;
     color: whitesmoke;
 }
+.darkProjectBtn:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
+}
 
 /* Refined Theme */
 .refinedCardContainer {
@@ -111,6 +115,10 @@
     font-family: 'Alice', serif;
     background-color: rgba(0, 0, 0);
     border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+.refinedProjectBtn:hover {
+    background-color: rgb(55, 55, 55);
     color: rgb(255, 255, 255);
 }
 
@@ -140,4 +148,7 @@
     background-color: rgba(57, 85, 63, 0.75);
     border-radius: 20px;
     color: whitesmoke;
+}
+.relaxedProjectBtn:hover {
+    color: rgba(153, 228, 171, 0.75);
 }
