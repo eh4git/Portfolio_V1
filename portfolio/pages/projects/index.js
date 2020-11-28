@@ -21,7 +21,7 @@ const Projects = () => {
             <NavBar />
             <Header name="Projects"/>
             
-            <div className={"row projectContainer " + theme}>
+            <div className={projectsStyle.projectArea}>
                 {profileText.projects.map((item, i) => 
                     <Project 
                         key={i}

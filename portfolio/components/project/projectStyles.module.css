@@ -1,10 +1,23 @@
+.projectContainer {
+    padding: 20px;
+}
 .cardContainer {
     padding: 30px;
     opacity: 0.90; 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 10px;
+    height: 100%;
 }
+/* .projectImageContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+} */
+/* .projectImage {
+
+} */
 .projectTextContainer {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,12 @@
     overflow: auto;
     padding-bottom: 60px;
 }
+.projectArea{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 15px
+}
 .light {
     background-image: url('../../public/assets/images/lightClouds.jpg');
 }

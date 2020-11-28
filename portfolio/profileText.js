@@ -47,7 +47,7 @@ const profileText =
     "projects": [
         {
             "name": "YouMdB Movie Application",
-            "description": "This application was built to provide internet users with a centralized location to look up information on movies and to be presented with movie trailers and similar movie recommendations. This project was a great exercise in utilizing multiple entertainment API's to present the user with useful information relevant to the scope of the application. Additionally, building this application helped reinforce skills with jquery, HTML, and CSS..",
+            "description": "This application was built to provide internet users with a centralized location to look up information on movies and to be presented with movie trailers and similar movie recommendations. This project was a great exercise in utilizing multiple entertainment API's to present the user with useful information relevant to the scope of the application. Additionally, building this application helped reinforce skills with jquery, HTML, and CSS.",
             "repository": "https://github.com/eh4git/YouMDb-Movie-App",
             "deployed":"https://eh4git.github.io/YouMDb-Movie-App/",
             "image": "/assets/images/YouMBdApp.png"
@@ -77,14 +77,14 @@ const profileText =
             "name": "Along With Me",
             "description": "An application built using React Native that enhances a users experience while reading their favorite literature. Provides the ability for users to trigger sounds that are tied to key words within the text. Key words are highlighted to show users what can be pressed to trigger the corresponding sound.",
             "repository": "https://github.com/eh4git/Along-With-Me",
-            "deployed":"",
+            "deployed": false,
             "image": "/assets/images/along-with-me-logo.png"
         },
         {
             "name": "E-Commerce Application",
             "description": "A React application that provides a basic framework for an e-commerce web application. Users can favorite and add items to a cart. Users can also manage the items in the cart and can place their order",
             "repository": "https://github.com/eh4git/Scrimba_ECommerce",
-            "deployed":"",
+            "deployed": false,
             "image": "/assets/images/Ecommerce.png"
         },
 

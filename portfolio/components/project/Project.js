@@ -42,15 +42,18 @@ const Project = (props) => {
                 )
 
     return (
-        <div className="projectContainer col-md-6 card ">
+        <div className={`${projectStyle.projectContainer} col-md-6`}>
             <div className={`${projectStyle.cardContainer} ${cardContainerCN}`}>
-                <Image
-                    src={props.image}
-                    className={projectImageCN}
-                    alt={props.name}
-                    width={300}
-                    height={300}
-                />
+               
+                    <Image
+                        src={props.image}
+                        className={projectImageCN}
+                        alt={props.name}
+                        width={800}
+                        height={450}
+
+                    />
+          
                 <div className={`${projectStyle.projectTextContainer} card-body`}>
                     <h4 className={`${projectStyle.projectHeader} ${projectHeaderCN} card-title`}>{props.name}</h4>
                     <p className={`${cardTextCN} card-text`}>
@@ -60,7 +63,9 @@ const Project = (props) => {
                         <a
                             className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
                             target="_blank"
-                            href={props.repository}>Github Repository
+                            href={props.repository}
+                        >
+                            Github Repository
                         </a>
                         {props.deployed
                             ? <a
