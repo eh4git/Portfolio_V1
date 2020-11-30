@@ -9,6 +9,15 @@
     margin-left: 20px;
     font-size: 75px;
 }
+@media screen and (max-width: 600px) {
+    .headerContainer {
+        flex-wrap: wrap-reverse;
+    }
+    .headerText {
+        margin: auto;
+        font-size: 65px;
+    }
+}
 
 /* Light Theme */
 .lightHeaderContainer {
@@ -45,4 +54,9 @@
 }
 .relaxedHeaderContainer {
     background-color: rgba(57, 85, 63, 0.75); 
+}
+@media screen and (max-width: 600px) {
+    .relaxedHeaderText {
+        margin-bottom: 15px;
+    }
 }

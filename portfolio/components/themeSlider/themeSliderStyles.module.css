@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 260px;
     justify-content: center;
+    text-align: center;
 }
 .sliderText {
     align-self: center;
@@ -27,6 +28,19 @@
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -7px;
+}
+@media screen and (max-width: 600px) {
+    .sliderContainer {
+        margin: auto;
+        flex-direction: row;
+        width: 100%;
+    }
+    .sliderText {
+        font-size: 20px;
+    }
+    .themeSlider {
+        width: 100px;
+      }
 }
 
 /* Light Theme */

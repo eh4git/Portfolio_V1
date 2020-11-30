@@ -29,7 +29,7 @@ function ThemeSlider() {
     return (
         <div className={themeSliderStyle.sliderContainer}>
             <p className={`${themeSliderStyle.sliderText} ${sliderTextCN}`}>
-                Current Theme: {themeCapitalized}
+                Current Theme:<br/> {themeCapitalized}
             </p>
             <input
                 className={`${themeSliderStyle.themeSlider} ${themeSliderCN}`}

@@ -61,6 +61,10 @@
     border-radius: 50px;
     color: rgb(29, 27, 25);
 }
+.lightProjectBtn:hover {
+    background-color:rgb(143, 167, 168);
+    color: rgb(255, 255, 255);
+}
 
 /* Dark Theme */
 .darkCardContainer {
