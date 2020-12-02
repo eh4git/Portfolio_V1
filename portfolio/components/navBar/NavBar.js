@@ -21,12 +21,12 @@ const NavBar = () => {
                 setInlineStyle(null)
                 break;
             case "refined":
-                setNavClassName("navbar navbar-expand-lg refined")
+                setNavClassName("navbar navbar-expand-lg refined bg-light")
                 setInlineStyle({ color: "rgb(255, 255, 255)" })
                 break;
             default:
-                setNavClassName("navbar navbar-expand-lg relaxed")
-                setInlineStyle({ color: " whitesmoke" })
+                setNavClassName("navbar navbar-expand-lg relaxed bg-dark")
+                setInlineStyle({ color: "whitesmoke" })
                 break;
         }
     }, [theme])
@@ -34,6 +34,7 @@ const NavBar = () => {
     let navContainerCN;
     let navHeaderCN;
     let navLinkCN;
+    let navTogglerCN;
     theme === 'light' ? (
         navHeaderCN = navBarStyle.lightNavHeader,
         navLinkCN = navBarStyle.lightNavLink
@@ -45,18 +46,20 @@ const NavBar = () => {
             : theme === 'refined' ? (
                 navHeaderCN = navBarStyle.refinedNavHeader,
                 navLinkCN = navBarStyle.refinedNavLink,
-                navContainerCN = navBarStyle.refinedNavContainer
+                navContainerCN = navBarStyle.refinedNavContainer,
+                navTogglerCN = navBarStyle.refinedNavToggler
             )
                 : (
                     navHeaderCN = navBarStyle.relaxedNavHeader,
                     navLinkCN = navBarStyle.relaxedNavLink,
-                    navContainerCN = navBarStyle.relaxedNavContainer
+                    navContainerCN = navBarStyle.relaxedNavContainer,
+                    navTogglerCN = navBarStyle.relaxedNavToggler
                 )
 
     return (
         <nav className={`${navBarStyle.navBarContainer} ${navContainerCN} ${navClassName}`}>
             <a className={`${navBarStyle.navHeader} ${navHeaderCN} navbar-brand nav-header`} href={profileText.landingPage} style={inLineStyle}>{profileText.name}</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button className={`${navTogglerCN} navbar-toggler`} type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

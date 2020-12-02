@@ -40,16 +40,19 @@ const AboutMe = () => {
     return (
         <div className={`${aboutMeStyle.aboutMeContainer} ${aboutMeContainerCN} jumbotron jumbotron-fluid col-md-12`}>
             <h2 className={`${aboutMeStyle.aboutMeHeader} ${aboutMeHeaderCN}`}>About Me</h2><br />
-            <Image
-                className={`${aboutMeStyle.profilePicture} ${profilePictureCN}`}
-                src={profileText.profilePicture}
-                alt="Picture of Erik Hirsch"
-                width={250}
-                height={250}
-            />
-            <p className={`${aboutMeStyle.portfolioparagraph} ${portfolioParagraphCN}`}>
-                {profileText.aboutMe}
-            </p>
+            <div className={`${aboutMeStyle.profilePicture} ${profilePictureCN}`}>
+                <Image
+                    className={`${aboutMeStyle.profilePicture} ${profilePictureCN}`}
+                    src={profileText.profilePicture}
+                    alt="Picture of Erik Hirsch"
+                    width={850}
+                    height={600}
+                    layout="responsive"
+                />
+            </div>
+                <p className={`${aboutMeStyle.portfolioparagraph} ${portfolioParagraphCN}`}>
+                    {profileText.aboutMe}
+                </p>
         </div>
     )
 }

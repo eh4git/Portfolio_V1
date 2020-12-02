@@ -13,6 +13,7 @@
     font-size: 30px;
     font-weight: bold;
 }
+
 .navLink:hover {
     font-size: 32px;
 }
@@ -46,6 +47,9 @@
 .refinedNavLink {
     font-family: 'Alice', serif;
 }
+.refinedNavToggler {
+    border-color: rgb(0, 0, 0);
+}
 .refinedNavLink:hover {
     color:rgb(192,192,192)!important;
 }
@@ -59,6 +63,9 @@
 }  
 .relaxedNavLink {
     font-family: "Nunito", sans-serif;
+}
+.relaxedNavToggler {
+    border-color: aliceblue;
 }
 .relaxedNavLink:hover {
     color: rgba(153, 228, 171, 0.75)!important;

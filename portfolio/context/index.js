@@ -3,8 +3,8 @@ import React, {useState} from "react"
 const Context = React.createContext()
 
 function ContextProvider({children}) {
-    const [theme, setTheme] = useState("light")
-    const [sliderValue, setSliderValue] = useState(1)
+    const [theme, setTheme] = useState("dark")
+    const [sliderValue, setSliderValue] = useState(35)
     
     const onSliderChange = event => {
         const currentValue = event.target.value
