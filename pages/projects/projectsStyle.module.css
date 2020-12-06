@@ -1,0 +1,24 @@
+.projectsContainer{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+.projectArea{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 15px
+}
+.light {
+    background-image: url('../../public/assets/images/lightClouds.jpg');
+}
+.dark {
+    background-image: url('../../public/assets/images/milky-way-darkSky.jpg');
+}
+.refined {
+    background-image: url('../../public/assets/images/buildings.jpg');
+}
+.relaxed {
+    background-image: url('../../public/assets/images/bricks-459299_1920.jpg');
+}
