@@ -1,0 +1,75 @@
+/* General Styling */
+.navBarContainer {
+    opacity: .9;   
+}
+.navHeader {
+    font-size: 36px;
+    font-weight: bold;
+}                            
+.navItem {
+    margin-left: 15px;
+}
+.navLink {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navLink:hover {
+    font-size: 32px;
+}
+
+/* Light Theme */
+.lightNavHeader {
+    font-family: 'Nothing You Could Do', cursive;
+}  
+.lightNavLink {
+    font-family: 'Nothing You Could Do', cursive;
+}
+.lightNavLink:hover {
+    color: rgb(110, 110, 110)!important;
+}
+
+/* Dark Theme */
+.darkNavHeader {
+    font-family: 'Roboto Slab', serif;
+}  
+.darkNavLink {
+    font-family: 'Roboto Slab', serif;
+}
+.darkNavLink:hover {
+    color: rgb(233, 233, 233)!important;
+}
+
+/* Refined Theme */
+.refinedNavHeader {
+    font-family: 'Alice', serif;
+} 
+.refinedNavLink {
+    font-family: 'Alice', serif;
+}
+.refinedNavToggler {
+    border-color: rgb(0, 0, 0);
+}
+.refinedNavLink:hover {
+    color:rgb(192,192,192)!important;
+}
+.refinedNavContainer {
+    background-color: black   
+}
+
+/* Relaxed Theme */
+.relaxedNavHeader {
+    font-family: "Nunito", sans-serif;
+}  
+.relaxedNavLink {
+    font-family: "Nunito", sans-serif;
+}
+.relaxedNavToggler {
+    border-color: aliceblue;
+}
+.relaxedNavLink:hover {
+    color: rgba(153, 228, 171, 0.75)!important;
+}
+.relaxedNavContainer {
+    background-color:  rgb(75, 44, 13);
+}
