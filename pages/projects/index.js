@@ -5,6 +5,7 @@ import {Context} from "../../context/index"
 import Project from "../../components/project/Project"
 import Header from "../../components/header/Header"
 import projectsStyle from './projectsStyle.module.css'
+import HeadText from "../../components/headText/headText";
 
 const Projects = () => {
 
@@ -18,6 +19,7 @@ const Projects = () => {
 
     return (
         <div className={`${projectsStyle.projectsContainer} ${projectsContainerCN}`}>
+            <HeadText title="Projects" />
             <NavBar />
             <Header name="Projects"/>
             

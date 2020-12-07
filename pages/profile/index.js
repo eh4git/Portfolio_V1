@@ -6,6 +6,7 @@ import Resume from "../../components/resume/Resume"
 import Header from "../../components/header/Header"
 import {Context}  from "../../context/index"
 import profileStyle from "./profileStyle.module.css"
+import HeadText from "../../components/headText/headText";
 
 const Profile = () => {
 
@@ -19,6 +20,7 @@ const Profile = () => {
 
     return (
         <div className={`${profileStyle.profileContainer} ${profileContainerCN}`}>
+            <HeadText title="Profile"/>
             <NavBar />
             <Header name="Profile"/>
             <div className='row'>

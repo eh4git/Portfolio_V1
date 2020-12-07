@@ -4,6 +4,7 @@ import Pdf from "../public/assets/docs/WebDevResume.pdf";
 import Docx from "../public/assets/docs/WebDevResume.docx"
 import profileText from "../profileText"
 import landPage from "../styles/landingPage.module.css";
+import HeadText from "../components/headText/headText";
 
 function LandingPage(props) {
 
@@ -17,6 +18,7 @@ function LandingPage(props) {
 
   return (
     <div className={landPage.wrapper}>
+      <HeadText title="Welcome" />
       <section className={landPage.parallaxContainer}>
         <div className={landPage.parallax}>
           <div className={landPage.logo}>
