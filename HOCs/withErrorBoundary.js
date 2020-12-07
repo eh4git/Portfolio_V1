@@ -25,7 +25,7 @@ class ErrorBoundary extends Component {
       this.state.hasError ? (
         <div>
           <h1 id='errMsg'>OOOps...Something went wrong...</h1>
-          <h3>I must be currently preforming maintenance, I will have the site back up and running soon. Please check back shortly </h3>
+          <h3>I must be currently preforming maintenance, I will have the site back up and running soon. Please check back shortly. Sorry for the inconvenience! </h3>
         </div>) 
       : <Component />
     )

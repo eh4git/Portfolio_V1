@@ -32,6 +32,9 @@
     color: #f5f5f5;
     margin: 2.5px;
 }
+.projectBtnGroup {
+    justify-content: space-around;
+}
 @media screen and (max-width: 1000px) {
     .projectHeader {
          width:  100%;

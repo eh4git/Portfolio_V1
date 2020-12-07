@@ -59,7 +59,7 @@ const Project = (props) => {
                     <p className={`${cardTextCN} card-text`}>
                         {props.description}
                     </p>
-                    <div className="row" >
+                    <div className={`${projectStyle.projectBtnGroup} row`} >
                         <a
                             className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
                             target="_blank"

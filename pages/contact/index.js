@@ -5,19 +5,19 @@ import profileText from "../../profileText"
 import {Context} from "../../context/index"
 import Header from "../../components/header/Header"
 import contactStyle from './contactStyles.module.css'
+import HeadText from "../../components/headText/headText";
 
 const Contact = () => {
 
    const {theme} = useContext(Context)
 
-function createClassName(theme, className){
     let name;
-    theme === 'light' ? name = `${contactStyle.light}${className}` 
-    : theme === 'dark' ? name = contactStyle.dark + className
-    : theme === 'refined' ? name = contactStyle.refined + className
-    : name = contactStyle.relaxed + className
-    return name;
-}
+    theme === 'light' ? name = `${contactStyle.light}${name}` 
+    : theme === 'dark' ? name = `${contactStyle.dark}${name}`
+    : theme === 'refined' ? name = `${contactStyle.refined}${name}`
+    : name = `${contactStyle.relaxed}${name}`
+    
+
 
 let contactContainerCN;
 let contactFormContainerCN;
@@ -53,12 +53,13 @@ let contactTextCN;
     )
 
      const onResumeClick= ()=> {
-         console.log("need to fix pdf import or find work-around")
+         console.log("need to find a way to view pdf")
     //   window.open(Pdf);
     }
 
     return(
         <div className={`${contactStyle.contactContainer} ${contactContainerCN}`}>
+            <HeadText title="Contact Me"/>
             <NavBar/>
             <Header name="Contact" />
             <div className={`${contactStyle.contactFormContainer} ${contactFormContainerCN}`}>
