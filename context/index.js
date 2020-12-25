@@ -1,11 +1,23 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 const Context = React.createContext()
 
 function ContextProvider({children}) {
-    const [theme, setTheme] = useState("dark")
+    const [theme, setTheme] = useState('dark')
     const [sliderValue, setSliderValue] = useState(35)
-    
+
+    useEffect(()=>{
+        const persistentTheme = window.localStorage.getItem('theme')
+        const persistentSliderValue = window.localStorage.getItem('sliderValue')
+        persistentTheme ? setTheme(persistentTheme) : null
+        persistentSliderValue ? setSliderValue(persistentSliderValue) : null
+    },[])
+
+    useEffect(()=>{
+        window.localStorage.setItem('theme', theme)
+        window.localStorage.setItem('sliderValue', sliderValue)
+    },[theme, sliderValue])
+
     const onSliderChange = event => {
         const currentValue = event.target.value
         setSliderValue(currentValue)
