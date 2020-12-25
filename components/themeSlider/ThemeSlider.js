@@ -5,7 +5,7 @@ import themeSliderStyle from "./themeSliderStyles.module.css"
 function ThemeSlider() {
 
     const { theme, sliderValue, onSliderChange } = useContext(Context)
-    const themeCapitalized = theme.charAt(0).toUpperCase() + theme.slice(1)
+    const themeCapitalized = theme ? theme.charAt(0).toUpperCase() + theme.slice(1) : ""
     
     let sliderTextCN;
     let themeSliderCN;
