@@ -3,14 +3,14 @@ import React, {useState, useEffect} from "react"
 const Context = React.createContext()
 
 function ContextProvider({children}) {
-    const [theme, setTheme] = useState()
-    const [sliderValue, setSliderValue] = useState()
+    const [theme, setTheme] = useState('dark')
+    const [sliderValue, setSliderValue] = useState(35)
 
     useEffect(()=>{
         const persistentTheme = window.localStorage.getItem('theme')
         const persistentSliderValue = window.localStorage.getItem('sliderValue')
-        persistentTheme ? setTheme(persistentTheme) : setTheme('dark')
-        persistentSliderValue ? setSliderValue(persistentSliderValue) : setSliderValue(35)
+        persistentTheme ? setTheme(persistentTheme) : null
+        persistentSliderValue ? setSliderValue(persistentSliderValue) : null
     },[])
 
     useEffect(()=>{
