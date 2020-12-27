@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import profileText from '../../profileText'
 import { Context } from "../../context/index"
 import skillsStyle from "./skillsStyles.module.css"
+import { Jumbotron, Row, Col } from 'reactstrap';
 
 const Skills = () => {
 
@@ -37,10 +38,10 @@ const Skills = () => {
                 )
 
     return (
-        <div className={`${skillsStyle.skillsContainer} ${skillsContainerCN} jumbotron jumbotron-fluid`}>
+        <Jumbotron className={`${skillsStyle.skillsContainer} ${skillsContainerCN} jumbotron jumbotron-fluid`}>
             <h2 className={`${skillsStyle.skillsHeader} ${skillsHeaderCN}`}>Skills</h2><br />
-            <div className="row">
-                <div className="col-md-6">
+            <Row xs='1' md='2'>
+                <Col >
                     <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Technical</h4>
                     <ul>
                         {profileText.skills.technical.map((item, i) => {
@@ -53,8 +54,8 @@ const Skills = () => {
                             )
                         })}
                     </ul>
-                </div>
-                <div className="col-md-6">
+                </Col>
+                <Col >
                     <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Other</h4>
                     <ul>
                         {profileText.skills.other.map((item, i) => {
@@ -67,9 +68,9 @@ const Skills = () => {
                             )
                         })}
                     </ul>
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Jumbotron>
 
     )
 }

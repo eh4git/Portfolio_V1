@@ -1,11 +1,12 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import NavBar from "../../components/navBar/NavBar"
 import profileText from "../../profileText"
-import {Context} from "../../context/index"
+import { Context } from "../../context/index"
 import Project from "../../components/project/Project"
 import Header from "../../components/header/Header"
 import projectsStyle from './projectsStyle.module.css'
 import HeadText from "../../components/headText/headText";
+import { Row, Col } from 'reactstrap';
 
 const Projects = () => {
 
@@ -23,7 +24,7 @@ const Projects = () => {
             <NavBar />
             <Header name="Projects"/>
             
-            <div className={projectsStyle.projectArea}>
+            <Row xs='1' lg='2'className={projectsStyle.projectArea}>
                 {profileText.projects.map((item, i) => 
                     <Project 
                         key={i}
@@ -34,7 +35,7 @@ const Projects = () => {
                         deployed={item.deployed} 
                     />
                 )}
-            </div>
+            </Row>
         </div>
     )
 }

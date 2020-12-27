@@ -2,6 +2,10 @@ import React, { useContext } from "react"
 import { Context } from "../../context/index"
 import Image from 'next/image'
 import projectStyle from "./projectStyles.module.css"
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button, Row, Col
+} from 'reactstrap';
 
 const Project = (props) => {
 
@@ -42,9 +46,9 @@ const Project = (props) => {
                 )
 
     return (
-        <div className={`${projectStyle.projectContainer} col-md-6`}>
+        <Col className={`${projectStyle.projectContainer}`}>
             <div className={`${projectStyle.cardContainer} ${cardContainerCN}`}>
-               <div className={`${projectStyle.projectImageContainer} ${projectImageCN}`}>
+                <div className={`${projectStyle.projectImageContainer} ${projectImageCN}`}>
                     <Image
                         src={props.image}
                         className={projectImageCN}
@@ -54,36 +58,49 @@ const Project = (props) => {
                         layout="responsive"
                     />
                 </div>
-                <div className={`${projectStyle.projectTextContainer} card-body`}>
-                    <h4 className={`${projectStyle.projectHeader} ${projectHeaderCN} card-title`}>{props.name}</h4>
-                    <p className={`${cardTextCN} card-text`}>
+                <CardBody className={`${projectStyle.projectTextContainer}`}>
+                    <CardTitle className={`${projectStyle.projectHeader} ${projectHeaderCN}`}>{props.name}</CardTitle>
+                    <CardText className={`${cardTextCN}`}>
                         {props.description}
-                    </p>
-                    <div className={`${projectStyle.projectBtnGroup} row`} >
-                        <a
-                            className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
-                            target="_blank"
-                            href={props.repository}
-                        >
-                            Github Repository
-                        </a>
-                        {props.deployed
-                            ? <a
-                                className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
+                    </CardText>
+                    <Row xs='1' lg='2' className={`${projectStyle.projectBtnGroup}`} >
+                        <Col >
+                            <Button
+                                size="lg"
+                                className={`${projectStyle.projectBtn} ${projectBtnCN}`}
                                 target="_blank"
-                                href={props.deployed}
+                                href={props.repository}
+                                block
                             >
-                                Deployed Application
-                            </a>
-                            : <a
-                                className={`${projectStyle.projectBtn} ${projectBtnCN} btn btn-lg col-md-5`}
-                                disabled>Application Not Deployed
-                            </a>
-                        }
-                    </div>
-                </div>
+                                Github Repository
+                            </Button>
+                        </Col>
+                        <Col >
+                            {props.deployed
+                                ? <Button
+                                    size="lg"
+                                    className={`${projectStyle.projectBtn} ${projectBtnCN}`}
+                                    target="_blank"
+                                    href={props.deployed}
+                                    block
+                                >
+                                    Deployed Application
+                                </Button>
+                                : <Button
+                                    size="lg"
+                                    className={`${projectStyle.projectBtn} ${projectBtnCN}`}
+                                    disabled
+                                    block
+                                >
+                                    Application Not Deployed
+                                </Button>
+                            }
+                        </Col>
+
+                    </Row>
+                </CardBody>
             </div>
-        </div>
+        </Col>
     )
 }
 export default Project

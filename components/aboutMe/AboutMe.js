@@ -3,6 +3,7 @@ import profileText from '../../profileText'
 import { Context } from "../../context/index"
 import aboutMeStyle from './aboutMeStyles.module.css'
 import Image from 'next/image'
+import { Jumbotron } from 'reactstrap';
 
 const AboutMe = () => {
 
@@ -38,7 +39,7 @@ const AboutMe = () => {
                 )
 
     return (
-        <div className={`${aboutMeStyle.aboutMeContainer} ${aboutMeContainerCN} jumbotron jumbotron-fluid col-md-12`}>
+        <Jumbotron className={`${aboutMeStyle.aboutMeContainer} ${aboutMeContainerCN}`}>
             <h2 className={`${aboutMeStyle.aboutMeHeader} ${aboutMeHeaderCN}`}>About Me</h2><br />
             <div className={`${aboutMeStyle.profilePicture} ${profilePictureCN}`}>
                 <Image
@@ -53,7 +54,7 @@ const AboutMe = () => {
                 <p className={`${aboutMeStyle.portfolioparagraph} ${portfolioParagraphCN}`}>
                     {profileText.aboutMe}
                 </p>
-        </div>
+        </Jumbotron>
     )
 }
 
