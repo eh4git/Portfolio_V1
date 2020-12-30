@@ -63,7 +63,7 @@ const Project = (props) => {
                     <CardText className={`${cardTextCN}`}>
                         {props.description}
                     </CardText>
-                    <Row xs='1' lg='2' className={`${projectStyle.projectBtnGroup}`} >
+                    <Row lg='1' xl='2' className={`${projectStyle.projectBtnGroup}`} >
                         <Col >
                             <Button
                                 size="lg"
