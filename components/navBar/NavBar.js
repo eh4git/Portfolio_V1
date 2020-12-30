@@ -3,29 +3,25 @@ import profileText from "../../profileText"
 import Link from 'next/link'
 import { Context } from "../../context/index"
 import navBarStyle from "./navBarStyle.module.css"
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap'
 
 const NavBar = () => {
-    const [navClassName, setNavClassName] = useState("navbar navbar-expand-lg navbar-light bg-light")
-    const [inLineStyle, setInlineStyle] = useState()
     const { theme } = useContext(Context)
+    const [inLineStyle, setInlineStyle] = useState()
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        //uses the light and dark bootstrap pre-built nav bar
         switch (theme) {
             case "light":
-                setNavClassName("navbar navbar-expand-lg navbar-light bg-light")
-                setInlineStyle(null)
-                break;
-            case "dark":
-                setNavClassName("navbar navbar-expand-lg navbar-dark bg-dark")
-                setInlineStyle(null)
-                break;
-            case "refined":
-                setNavClassName("navbar navbar-expand-lg refined bg-light")
                 setInlineStyle({ color: "rgb(0, 0, 0)" })
                 break;
+            case "dark":
+                setInlineStyle({ color: "rgb(225, 225, 225)" })
+                break;
+            case "refined":
+                setInlineStyle({ color: "rgb(255, 255, 255)" })
+                break;
             default:
-                setNavClassName("navbar navbar-expand-lg relaxed bg-dark")
                 setInlineStyle({ color: "whitesmoke" })
                 break;
         }
@@ -36,17 +32,21 @@ const NavBar = () => {
     let navLinkCN;
     let navTogglerCN;
     theme === 'light' ? (
+        navContainerCN = navBarStyle.lightNavContainer,
         navHeaderCN = navBarStyle.lightNavHeader,
-        navLinkCN = navBarStyle.lightNavLink
+        navLinkCN = navBarStyle.lightNavLink,
+        navTogglerCN = navBarStyle.lightNavToggler
     )
         : theme === 'dark' ? (
+            navContainerCN = navBarStyle.darkNavContainer,
             navHeaderCN = navBarStyle.darkNavHeader,
-            navLinkCN = navBarStyle.darkNavLink
+            navLinkCN = navBarStyle.darkNavLink,
+            navTogglerCN = navBarStyle.darkNavToggler
         )
             : theme === 'refined' ? (
+                navContainerCN = navBarStyle.refinedNavContainer,
                 navHeaderCN = navBarStyle.refinedNavHeader,
                 navLinkCN = navBarStyle.refinedNavLink,
-                navContainerCN = navBarStyle.refinedNavContainer,
                 navTogglerCN = navBarStyle.refinedNavToggler
             )
                 : (
@@ -56,40 +56,77 @@ const NavBar = () => {
                     navTogglerCN = navBarStyle.relaxedNavToggler
                 )
 
+    const toggle = () => setIsOpen(!isOpen);
+
+    // return (
+    //     <div>
+    //         <Navbar color="light" light expand="md">
+    //             <NavbarBrand href="/">reactstrap</NavbarBrand>
+    //             <NavbarToggler onClick={toggle} />
+    //             <Collapse isOpen={isOpen} navbar>
+    //                 <Nav className="mr-auto" navbar>
+    //                     <NavItem>
+    //                         <NavLink href="/components/">Components</NavLink>
+    //                     </NavItem>
+    //                     <NavItem>
+    //                         <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+    //                     </NavItem>
+    //                 </Nav>
+    //             </Collapse>
+    //         </Navbar>
+    //     </div>
+    // );
+
     return (
-        <nav className={`${navBarStyle.navBarContainer} ${navContainerCN} ${navClassName}`}>
-            <a className={`${navBarStyle.navHeader} ${navHeaderCN} navbar-brand nav-header`} href={profileText.landingPage} style={inLineStyle}>{profileText.name}</a>
-            <button className={`${navTogglerCN} navbar-toggler`} type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
+        <Navbar
+            className={`${navBarStyle.navBarContainer} ${navContainerCN}`}
+            expand="md"
+            dark
+        >
+            <NavbarBrand
+                className={`${navBarStyle.navHeader} ${navHeaderCN}`}
+                href={profileText.landingPage}
+                style={inLineStyle}
+            >
+                {profileText.name}
+            </NavbarBrand>
+            <NavbarToggler className={navTogglerCN} onClick={toggle} />
+            <Collapse
+                isOpen={isOpen}
+                color="dark"
+                navbar
+            >
+                <Nav navbar>
                     {profileText.profileSections.map((item, i) => {
                         return (
-                            <li className={`${navBarStyle.navItem} nav-item active`} key={i}>
+                            <NavItem className={`${navBarStyle.navItem}`} key={i}>
                                 <Link href={item.href} >
-                                    <a style={inLineStyle} className={`${navBarStyle.navLink} ${navLinkCN} nav-link`}>
+                                    <NavLink style={inLineStyle} className={`${navBarStyle.navLink} ${navLinkCN}`}>
                                         {item.name}
-                                    </a>
+                                    </NavLink>
                                 </Link>
-                            </li>
+                            </NavItem>
                         )
                     })
                     }
                     {profileText.profiles.map((item, i) => {
                         return (
-                            <li className={`${navBarStyle.navItem} nav-item`} key={i} >
-                                <a className={`${navBarStyle.navLink} ${navLinkCN} nav-link`} href={item.href} rel="noopener noreferrer" target="_blank" style={inLineStyle}>
+                            <NavItem className={`${navBarStyle.navItem}`} key={i} >
+                                <NavLink
+                                    className={`${navBarStyle.navLink} ${navLinkCN}`}
+                                    href={item.href}
+                                    target="_blank"
+                                    style={inLineStyle}
+                                >
                                     {item.name}
-                                </a>
-                            </li>
+                                </NavLink>
+                            </NavItem>
                         )
                     })
                     }
-                </ul>
-            </div>
-        </nav>
+                </Nav>
+            </Collapse>
+        </Navbar>
     )
 }
 

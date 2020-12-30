@@ -6,7 +6,7 @@ import Project from "../../components/project/Project"
 import Header from "../../components/header/Header"
 import projectsStyle from './projectsStyle.module.css'
 import HeadText from "../../components/headText/headText";
-import { Row, Col } from 'reactstrap';
+import { Row } from 'reactstrap';
 
 const Projects = () => {
 
@@ -24,7 +24,7 @@ const Projects = () => {
             <NavBar />
             <Header name="Projects"/>
             
-            <Row xs='1' lg='2'className={projectsStyle.projectArea}>
+            <Row xs='1' md='2' lg='3'className={projectsStyle.projectArea}>
                 {profileText.projects.map((item, i) => 
                     <Project 
                         key={i}
