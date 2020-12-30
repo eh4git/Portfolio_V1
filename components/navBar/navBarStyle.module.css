@@ -1,6 +1,7 @@
 /* General Styling */
 .navBarContainer {
     opacity: .9;   
+    height: 80px;
 }
 .navHeader {
     font-size: 36px;
@@ -19,6 +20,9 @@
 }
 
 /* Light Theme */
+.lightNavContainer {
+    background-image: linear-gradient(to right, rgba(162, 187, 189, 0.75) 25%, rgb(162, 187, 189))
+}
 .lightNavHeader {
     font-family: 'Nothing You Could Do', cursive;
 }  
@@ -28,8 +32,15 @@
 .lightNavLink:hover {
     color: rgb(110, 110, 110)!important;
 }
+.refinedNavToggler {
+    border-color: rgb(0, 0, 0);
+}
 
 /* Dark Theme */
+.darkNavContainer{
+    opacity: .95;
+    background-color: rgb(20, 20, 30);
+}
 .darkNavHeader {
     font-family: 'Roboto Slab', serif;
 }  
@@ -48,13 +59,14 @@
     font-family: 'Alice', serif;
 }
 .refinedNavToggler {
-    border-color: rgb(0, 0, 0);
+    /* border-color: rgb(0, 0, 0); */
 }
 .refinedNavLink:hover {
     color:rgb(192,192,192)!important;
 }
 .refinedNavContainer {
-    background-color: black   
+    background-color: rgb(0, 0, 0);
+    color: rgb(233, 233, 233);
 }
 
 /* Relaxed Theme */

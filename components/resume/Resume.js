@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../../context/index"
 import resumeStyle from "./resumeStyles.module.css"
+import { Jumbotron, Row, Col } from 'reactstrap';
 
 import Pdf from "../../public/assets/docs/WebDevResume.pdf";
 
@@ -29,7 +30,7 @@ const Resume = () => {
 
     return (
         <>
-            <div className={`${resumeStyle.resumeContainer} ${resumeContainerCN} jumbotron jumbotron-fluid col-md-12`}>
+            <Jumbotron className={`${resumeStyle.resumeContainer} ${resumeContainerCN}`}>
                 <h2 className={`${resumeStyle.resumeHeader} ${resumeHeaderCN}`}>Resume</h2><br />
                 <a
                     target="_blank"
@@ -40,7 +41,7 @@ const Resume = () => {
                 >
                     <div className={resumeStyle.resumeFrame} ></div>
                 </a>
-            </div>
+            </Jumbotron>
         </>
     )
 }

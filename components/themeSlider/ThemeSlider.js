@@ -6,7 +6,7 @@ function ThemeSlider() {
 
     const { theme, sliderValue, onSliderChange } = useContext(Context)
     const themeCapitalized = theme ? theme.charAt(0).toUpperCase() + theme.slice(1) : ""
-    
+
     let sliderTextCN;
     let themeSliderCN;
     theme === 'light' ? (
@@ -29,7 +29,7 @@ function ThemeSlider() {
     return (
         <div className={themeSliderStyle.sliderContainer}>
             <p className={`${themeSliderStyle.sliderText} ${sliderTextCN}`}>
-                Current Theme:<br/> {themeCapitalized}
+                Current Theme:<br /> {themeCapitalized}
             </p>
             <input
                 className={`${themeSliderStyle.themeSlider} ${themeSliderCN}`}

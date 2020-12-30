@@ -7,6 +7,7 @@ import Header from "../../components/header/Header"
 import {Context}  from "../../context/index"
 import profileStyle from "./profileStyle.module.css"
 import HeadText from "../../components/headText/headText";
+import { Row, Col } from 'reactstrap';
 
 const Profile = () => {
 
@@ -23,19 +24,19 @@ const Profile = () => {
             <HeadText title="Profile"/>
             <NavBar />
             <Header name="Profile"/>
-            <div className='row'>
-                <div className='col-12'>
+            <Row>
+                <Col>
                     <AboutMe />
-                </div>
-            </div>
-            <div className='row'>
-                <div className='col-lg-12 col-xl-7'>
+                </Col>
+            </Row>
+            <Row xs="1" lg="2">
+                <Col>
                     <Skills />
-                </div>
-                <div className='col-lg-12 col-xl-5'>
+                </Col>
+                <Col>
                     <Resume />
-                </div>
-            </div>
+                </Col>
+            </Row>
         </div>
     )
 }
