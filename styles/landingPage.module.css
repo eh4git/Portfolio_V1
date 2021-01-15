@@ -29,7 +29,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-image: url('../public/assets/images/stars-forest-silhouette.gif');
+  background-image: url('https://d3kccomi9ge1kz.cloudfront.net/stars-forest-silhouette.gif');
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;

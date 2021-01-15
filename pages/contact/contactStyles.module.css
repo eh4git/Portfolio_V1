@@ -41,7 +41,7 @@
 
 /* Light Theme */
 .lightContainer {
-    background-image: url('../../public/assets/images/lightClouds.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/lightClouds.jpg');
 }
 .lightContactFormContainer {
     background-color: rgb(255, 255, 255, .9);
@@ -65,7 +65,7 @@
 
 /* Dark Theme */
 .darkContainer {
-    background-image: url('../../public/assets/images/milky-way-darkSky.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/milky-way-darkSky.jpg');
 }
 .darkContactFormContainer {
     background-color:rgb(138, 138, 138);
@@ -88,7 +88,7 @@
 
 /* Refined Theme */
 .refinedContainer {
-    background-image: url('../../public/assets/images/buildings.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/buildings.jpg');
 }
 .refinedContactFormContainer {
     background-color: #ffffff;
@@ -111,7 +111,7 @@
 
 /* RelaxedTheme */
 .relaxedContainer {
-    background-image: url('../../public/assets/images/bricks-459299_1920.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/bricks-459299_1920.jpg');
 }
 .relaxedContactFormContainer {
     background-color:rgba(213, 224, 216, 0.95);

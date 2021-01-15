@@ -3,8 +3,8 @@ import { Context } from "../../context/index"
 import Image from 'next/image'
 import projectStyle from "./projectStyles.module.css"
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Row, Col
+    CardText, CardBody,
+    CardTitle, Button, Row, Col
 } from 'reactstrap';
 
 const Project = (props) => {
