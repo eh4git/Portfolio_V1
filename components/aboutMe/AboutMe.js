@@ -51,7 +51,7 @@ const AboutMe = () => {
                     layout="responsive"
                 />
             </div>
-                <p className={`${aboutMeStyle.portfolioparagraph} ${portfolioParagraphCN}`}>
+                <p className={`${aboutMeStyle.portfolioParagraph} ${portfolioParagraphCN}`}>
                     {profileText.aboutMe}
                 </p>
         </Jumbotron>
