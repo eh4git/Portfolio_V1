@@ -11,14 +11,14 @@
     margin: 15px
 }
 .light {
-    background-image: url('../../public/assets/images/lightClouds.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/lightClouds.jpg');
 }
 .dark {
-    background-image: url('../../public/assets/images/milky-way-darkSky.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/milky-way-darkSky.jpg');
 }
 .refined {
-    background-image: url('../../public/assets/images/buildings.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/buildings.jpg');
 }
 .relaxed {
-    background-image: url('../../public/assets/images/bricks-459299_1920.jpg');
+    background-image: url('https://d3kccomi9ge1kz.cloudfront.net/bricks-459299_1920.jpg');
 }

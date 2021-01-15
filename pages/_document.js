@@ -8,8 +8,10 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang="en">
                 <Head >
+                    <meta name="author" content="Erik Hirsch"/>
+                    <meta name="description" content="Erik Hirsch's portfolio page that provides a platform to display previous and current projects as well as the associated skills."/>
                 </Head>
                 <body>
                     <Main />
