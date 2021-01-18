@@ -1,20 +1,21 @@
 import React from "react";
 import Link from 'next/link'
-import Pdf from "../public/assets/docs/WebDevResume.pdf";
-import Docx from "../public/assets/docs/WebDevResume.docx"
 import profileText from "../profileText"
 import landPage from "../styles/landingPage.module.css";
 import HeadText from "../components/headText/headText";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFilePdf, faFileWord } from '@fortawesome/free-solid-svg-icons'
 
 function LandingPage(props) {
 
-  const onPdfClick = () => {
-    window.open(Pdf);
-  }
+  // const onPdfClick = () => {
+  //   window.open(Pdf);
+  // }
 
-  const onDocxClick = () => {
-    window.location.replace(Docx);
-  }
+  // const onDocxClick = () => {
+  //   window.location.replace(Docx);
+  // }
 
   return (
     <div className={landPage.wrapper}>
@@ -35,31 +36,25 @@ function LandingPage(props) {
                   rel="noopener noreferrer"
                   href={profileText.profiles[0].href}
                 >
-                  <i className='fab fa-linkedin'></i>
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
                 <a
                   className={`${landPage.linkTwo} ${landPage.links}`}
                   target="_blank" rel="noopener noreferrer"
                   href={profileText.profiles[1].href}
                 >
-                  <i className='fab fa-github'></i>
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
-                <a
-                  className={`${landPage.linkThree} ${landPage.links}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={onPdfClick}
-                >
-                  <i className='far fa-file-pdf'></i>
-                </a>
-                <a
-                  className={`${landPage.linkFour} ${landPage.links}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={onDocxClick}
-                >
-                  <i className='far fa-file-word'></i>
-                </a>
+                <Link href={profileText.profileSections[3].href} target="_blank">
+                  <a className={`${landPage.linkThree} ${landPage.links}`} >
+                  <FontAwesomeIcon icon={faFilePdf} size="2x" />
+                  </a>
+                </Link>
+                <Link href={profileText.profileSections[3].href} target="_blank">
+                  <a className={`${landPage.linkFour} ${landPage.links}`} >
+                  <FontAwesomeIcon icon={faFileWord} size="2x" />
+                  </a>
+                </Link>
                 {/* <a target="_blank" href={profileText.profiles[2].href}><i className={`${landPage.linkOne} fa fa-codepen`}></i></a> */}
               </div>
             </div>
