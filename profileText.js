@@ -42,10 +42,6 @@ const profileText =
             "name": "Contact",
             "href": "/contact/"
         },
-        {
-            "name": "Resume",
-            "href": "/resume/"
-        }
     ],
 
     "projects": [

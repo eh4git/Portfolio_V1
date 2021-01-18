@@ -36,23 +36,23 @@ function LandingPage(props) {
                   rel="noopener noreferrer"
                   href={profileText.profiles[0].href}
                 >
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                  <FontAwesomeIcon icon={faLinkedin} size="lg" />
                 </a>
                 <a
                   className={`${landPage.linkTwo} ${landPage.links}`}
                   target="_blank" rel="noopener noreferrer"
                   href={profileText.profiles[1].href}
                 >
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
-                <Link href={profileText.profileSections[3].href} target="_blank">
+                <Link href="/resume" target="_blank">
                   <a className={`${landPage.linkThree} ${landPage.links}`} >
-                  <FontAwesomeIcon icon={faFilePdf} size="2x" />
+                  <FontAwesomeIcon icon={faFilePdf} size="lg" />
                   </a>
                 </Link>
-                <Link href={profileText.profileSections[3].href} target="_blank">
+                <Link href="/resume" target="_blank">
                   <a className={`${landPage.linkFour} ${landPage.links}`} >
-                  <FontAwesomeIcon icon={faFileWord} size="2x" />
+                  <FontAwesomeIcon icon={faFileWord} size="lg" />
                   </a>
                 </Link>
                 {/* <a target="_blank" href={profileText.profiles[2].href}><i className={`${landPage.linkOne} fa fa-codepen`}></i></a> */}

@@ -11,8 +11,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const PDF = () => {
-
-    const { theme } = useContext(Context)
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
@@ -37,15 +35,23 @@ const PDF = () => {
             <Header name="Erik's Resume" />
             <p>Page {pageNumber} of {numPages}</p>
             <div className={pdfStyles.pdfContainer}>
-            <FontAwesomeIcon icon={faChevronLeft} size="3x" onClick={previousPage}/>
+            <FontAwesomeIcon 
+                icon={faChevronLeft} 
+                size="2x" 
+                onClick={previousPage}
+            />
                 <Document
                     file="/assets/docs/WebDevResume.pdf"
                     onLoadSuccess={onDocumentLoadSuccess}
                     className={pdfStyles.pdf}
                     >
-                    <Page pageNumber={pageNumber} />
+                    <Page width={1000} renderMode="svg" pageNumber={pageNumber} />
                 </Document>
-                <FontAwesomeIcon icon={faChevronRight} size="3x" onClick={nextPage}/>
+                <FontAwesomeIcon 
+                    icon={faChevronRight} 
+                    size="2x" 
+                    onClick={nextPage}
+                />
             </div>
         </div>
     )
