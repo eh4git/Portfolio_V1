@@ -37,17 +37,17 @@ const AboutMe = () => {
                     profilePictureCN = aboutMeStyle.relaxedProfilePicture,
                     portfolioParagraphCN = aboutMeStyle.relaxedPortfolioParagraph
                 )
-
+                
     return (
         <Jumbotron className={`${aboutMeStyle.aboutMeContainer} ${aboutMeContainerCN}`}>
             <h2 className={`${aboutMeStyle.aboutMeHeader} ${aboutMeHeaderCN}`}>About Me</h2><br />
-            <div className={`${aboutMeStyle.profilePicture} ${profilePictureCN}`}>
+            <div className={`${aboutMeStyle.profilePictureWrapper} ${profilePictureCN}`}>
                 <Image
-                    className={`${aboutMeStyle.profilePicture} ${profilePictureCN}`}
+                    className={profilePictureCN}
                     src={profileText.profilePicture}
                     alt="Picture of Erik Hirsch"
-                    width={850}
-                    height={600}
+                    height={650}
+                    width={500}
                     layout="responsive"
                 />
             </div>
