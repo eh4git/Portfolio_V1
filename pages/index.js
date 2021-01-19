@@ -45,17 +45,13 @@ function LandingPage(props) {
                 >
                   <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
-                <Link href="/resume" target="_blank">
-                  <a className={`${landPage.linkThree} ${landPage.links}`} >
+                <a href="/assets/docs/WebDevResume.pdf" target="_blank" className={`${landPage.linkThree} ${landPage.links}`} >
                   <FontAwesomeIcon icon={faFilePdf} size="lg" />
-                  </a>
-                </Link>
-                <Link href="/resume" target="_blank">
-                  <a className={`${landPage.linkFour} ${landPage.links}`} >
+                </a>
+
+                <a href="/assets/docs/WebDevResume.docx" download="Erik_Hirsch_Resume" className={`${landPage.linkFour} ${landPage.links}`} >
                   <FontAwesomeIcon icon={faFileWord} size="lg" />
-                  </a>
-                </Link>
-                {/* <a target="_blank" href={profileText.profiles[2].href}><i className={`${landPage.linkOne} fa fa-codepen`}></i></a> */}
+                </a>
               </div>
             </div>
             <div className={`${landPage.line} ${landPage.bottomLine}`}></div>
