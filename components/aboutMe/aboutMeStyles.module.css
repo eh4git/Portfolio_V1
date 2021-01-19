@@ -18,20 +18,23 @@
     display: flex;
     flex-wrap: wrap;
 }
-.profilePicture {
-    margin: 25px 30px 15px 0px;
+.profilePictureWrapper {
     float: left;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 350px;
-  }
+    width: 20%;
+    min-width: 200px;
+    margin: 25px 30px 15px 0px;
+}
+/* .profilePicture {
+
+  } */
 .portfolioParagraph {
     font-size: 22px;
 }
 @media screen and (max-width: 750px){
-    .profilePicture {
+    .profilePictureWrapper {
         float: none;
         margin: 15px auto 20px;
+        width: 100%;
     }
     .aboutMeHeader {
         width:  100%;

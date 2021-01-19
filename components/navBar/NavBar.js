@@ -80,7 +80,7 @@ const NavBar = () => {
     return (
         <Navbar
             className={`${navBarStyle.navBarContainer} ${navContainerCN}`}
-            expand="md"
+            expand="lg"
             dark
         >
             <NavbarBrand
