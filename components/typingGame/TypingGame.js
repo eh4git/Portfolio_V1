@@ -1,6 +1,5 @@
 import React from "react"
 import useTypingGame from "../../hooks/useTypingGame"
-// import "./index.css"
 
 const TypingGame = () => {
     const [text, timeRemaining, isTimeRunning, wordCount, textBoxRef, handleChange, calculateWordCount, startGame, endGame] = useTypingGame()

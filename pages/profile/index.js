@@ -30,10 +30,10 @@ const Profile = () => {
                 </Col>
             </Row>
             <Row xs="1" lg="2">
-                <Col>
+                <Col lg="7">
                     <Skills />
                 </Col>
-                <Col>
+                <Col lg="5">
                     <Resume />
                 </Col>
             </Row>

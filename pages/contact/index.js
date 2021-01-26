@@ -1,6 +1,5 @@
 import React, {useContext} from "react";
 import NavBar from "../../components/navBar/NavBar"
-// import Pdf from "../../assets/docs/WebDevResume.pdf";
 import profileText from "../../profileText"
 import {Context} from "../../context/index"
 import Header from "../../components/header/Header"
@@ -52,11 +51,6 @@ let contactTextCN;
        contactEmailCN = contactStyle.relaxedContactEmail
     )
 
-     const onResumeClick= ()=> {
-         console.log("need to find a way to view pdf")
-    //   window.open(Pdf);
-    }
-
     return(
         <div className={`${contactStyle.contactContainer} ${contactContainerCN}`}>
             <HeadText title="Contact Me"/>
@@ -85,7 +79,7 @@ let contactTextCN;
                 <p className={`${contactStyle.contactText} ${contactTextCN}`}>{profileText.phone} <br/>
                 {profileText.location}
                 </p>
-                {/* <a onClick={onResumeClick} target="_blank" >My Resume</a> */}
+                <a href="/assets/docs/WebDevResume.pdf" target="_blank" >My Resume</a>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import profileText from '../../profileText'
 import { Context } from "../../context/index"
 import skillsStyle from "./skillsStyles.module.css"
-import { Jumbotron, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 const Skills = () => {
 
@@ -38,7 +38,7 @@ const Skills = () => {
                 )
 
     return (
-        <Jumbotron className={`${skillsStyle.skillsContainer} ${skillsContainerCN} jumbotron jumbotron-fluid`}>
+        <div className={`${skillsStyle.skillsContainer} ${skillsContainerCN}`}>
             <h2 className={`${skillsStyle.skillsHeader} ${skillsHeaderCN}`}>Skills</h2><br />
             <Row xs='1' md='2'>
                 <Col >
@@ -70,7 +70,7 @@ const Skills = () => {
                     </ul>
                 </Col>
             </Row>
-        </Jumbotron>
+        </div>
 
     )
 }
