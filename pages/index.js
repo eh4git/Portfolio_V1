@@ -7,15 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFilePdf, faFileWord } from '@fortawesome/free-solid-svg-icons'
 
-function LandingPage(props) {
-
-  // const onPdfClick = () => {
-  //   window.open(Pdf);
-  // }
-
-  // const onDocxClick = () => {
-  //   window.location.replace(Docx);
-  // }
+function LandingPage() {
 
   return (
     <div className={landPage.wrapper}>
@@ -49,7 +41,7 @@ function LandingPage(props) {
                   <FontAwesomeIcon icon={faFilePdf} size="lg" />
                 </a>
 
-                <a href="/assets/docs/WebDevResume.docx" download="Erik_Hirsch_Resume" className={`${landPage.linkFour} ${landPage.links}`} >
+                <a href="/assets/docs/WebDevResume.docx" download="ErikHirschResume" className={`${landPage.linkFour} ${landPage.links}`} >
                   <FontAwesomeIcon icon={faFileWord} size="lg" />
                 </a>
               </div>

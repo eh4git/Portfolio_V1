@@ -34,10 +34,7 @@ const Resume = () => {
                 <h2 className={`${resumeStyle.resumeHeader} ${resumeHeaderCN}`}>Resume</h2><br />
                 <a
                     target="_blank"
-                    onClick={() => {
-                        console.log("Need to figure out pdf viewer")
-                        // window.open(Pdf);
-                    }}
+                    href="/assets/docs/WebDevResume.pdf"
                 >
                     <div className={resumeStyle.resumeFrame} ></div>
                 </a>

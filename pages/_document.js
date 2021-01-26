@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head >
                     <meta name="author" content="Erik Hirsch"/>
-                    <meta name="description" content="Erik Hirsch's portfolio page that provides a platform to display previous and current projects as well as the associated skills."/>
+                    <meta name="description" content="Hello, my name is Erik Hirsch and this is my portfolio webpage that provides a platform to display previous and current projects as well as the associated skills."/>
                 </Head>
                 <body>
                     <Main />

@@ -3,7 +3,7 @@ import profileText from "../../profileText"
 import Link from 'next/link'
 import { Context } from "../../context/index"
 import navBarStyle from "./navBarStyle.module.css"
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap'
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap'
 
 const NavBar = () => {
     const { theme } = useContext(Context)
@@ -57,25 +57,6 @@ const NavBar = () => {
                 )
 
     const toggle = () => setIsOpen(!isOpen);
-
-    // return (
-    //     <div>
-    //         <Navbar color="light" light expand="md">
-    //             <NavbarBrand href="/">reactstrap</NavbarBrand>
-    //             <NavbarToggler onClick={toggle} />
-    //             <Collapse isOpen={isOpen} navbar>
-    //                 <Nav className="mr-auto" navbar>
-    //                     <NavItem>
-    //                         <NavLink href="/components/">Components</NavLink>
-    //                     </NavItem>
-    //                     <NavItem>
-    //                         <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-    //                     </NavItem>
-    //                 </Nav>
-    //             </Collapse>
-    //         </Navbar>
-    //     </div>
-    // );
 
     return (
         <Navbar
