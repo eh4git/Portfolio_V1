@@ -77,7 +77,7 @@ const profileText =
             "name": "Along With Me",
             "description": "An application built using React Native that enhances a users experience while reading their favorite literature. Provides the ability for users to trigger sounds that are tied to key words within the text. Key words are highlighted to show users what can be pressed to trigger the corresponding sound.",
             "repository": "https://github.com/eh4git/Along-With-Me",
-            "deployed": false,
+            "deployed": "https://play.google.com/store/apps/details?id=com.rnapp2021",
             "image": "https://d3kccomi9ge1kz.cloudfront.net/along-with-me-logo.png"
         },
         {
@@ -87,7 +87,20 @@ const profileText =
             "deployed": false,
             "image": "https://d3kccomi9ge1kz.cloudfront.net/Ecommerce.png"
         },
-
+        {
+            "name": "Time2Fly",
+            "description": "A React Native application that allows flight attendants to easily track their hours and know when they will reach their maximum allowed work time. ",
+            "repository": "Private",
+            "deployed": false,
+            "image": "https://d3kccomi9ge1kz.cloudfront.net/image-coming-soon.jpg"
+        },
+        {
+            "name": "React TypeScript Minesweeper",
+            "description": "The classic game of minesweeper with a few improvements. Users always open multiple tiles on their first click and can choose four different difficulty settings. More features and UI improvements to come.",
+            "repository": "https://github.com/eh4git/Scrimba_ECommerce",
+            "deployed": false,
+            "image": "https://d3kccomi9ge1kz.cloudfront.net/image-coming-soon.jpg"
+        },
         
     ],
     "resume":
