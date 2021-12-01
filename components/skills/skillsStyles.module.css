@@ -60,10 +60,16 @@
 }
 .darkSkillsSubHeader {
     font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: 600;
+    text-shadow: -3px -3px 10px black;
 }
 .darkSkill {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
+    color: white;
+    font-weight: 600;
+    text-shadow: -3px -3px 10px black;
 }
 
 /* Refined Theme */

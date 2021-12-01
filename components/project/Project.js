@@ -60,7 +60,7 @@ const Project = (props) => {
                 </div>
                 <CardBody className={`${projectStyle.projectTextContainer}`}>
                     <CardTitle className={`${projectStyle.projectHeader} ${projectHeaderCN}`}>{props.name}</CardTitle>
-                    <CardText className={`${cardTextCN}`}>
+                    <CardText className={`${projectStyle.cardText} ${cardTextCN}`}>
                         {props.description}
                     </CardText>
                     <Row lg='1' xl='2' className={`${projectStyle.projectBtnGroup}`} >

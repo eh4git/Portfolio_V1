@@ -29,6 +29,7 @@
   } */
 .portfolioParagraph {
     font-size: 22px;
+    margin-top: 1.5em;
 }
 @media screen and (max-width: 750px){
     .profilePictureWrapper {
@@ -80,6 +81,9 @@
   }
 .darkPortfolioParagraph {
     font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-shadow: -3px -3px 10px black;
 }
 
 /* Refined Theme */

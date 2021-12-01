@@ -27,28 +27,28 @@ let contactTextCN;
        contactContainerCN = contactStyle.lightContainer, contactFormContainerCN = contactStyle.lightContactFormContainer,
        contactHeaderCN = contactStyle.lightContactHeader,
        contactEmailCN = contactStyle.lightContactEmail,
-       contactEmailCN = contactStyle.lightContactEmail
+       contactTextCN = contactStyle.lightContactText
        )
    : theme === 'dark' ? (
        contactContainerCN = contactStyle.darkContainer,
        contactFormContainerCN = contactStyle.darkContactFormContainer,
        contactHeaderCN = contactStyle.darkContactHeader,
        contactEmailCN = contactStyle.darkContactEmail,
-       contactEmailCN = contactStyle.darkContactEmail
+       contactTextCN = contactStyle.darkContactText
        )
    : theme === 'refined' ? (
        contactContainerCN = contactStyle.refinedContainer,
        contactFormContainerCN = contactStyle.refinedContactFormContainer,
        contactHeaderCN = contactStyle.refinedContactHeader,
        contactEmailCN = contactStyle.refinedContactEmail,
-       contactEmailCN = contactStyle.refinedContactEmail
+       contactTextCN = contactStyle.refinedContactText
     )
    : (
        contactContainerCN = contactStyle.relaxedContainer,
        contactFormContainerCN = contactStyle.relaxedContactFormContainer,
        contactHeaderCN = contactStyle.relaxedContactHeader,
        contactEmailCN = contactStyle.relaxedContactEmail,
-       contactEmailCN = contactStyle.relaxedContactEmail
+       contactTextCN = contactStyle.relaxedContactText
     )
 
     return(
@@ -79,7 +79,7 @@ let contactTextCN;
                 <p className={`${contactStyle.contactText} ${contactTextCN}`}>{profileText.phone} <br/>
                 {profileText.location}
                 </p>
-                <a href="/assets/docs/WebDevResume.pdf" target="_blank" >My Resume</a>
+                {/* <a href="/assets/docs/WebDevResume.pdf" target="_blank" >My Resume</a> */}
             </div>
         </div>
     )
