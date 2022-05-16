@@ -18,6 +18,9 @@
     width:  60%;
     padding:10px 30px;
 }
+.skill {
+    margin-left: 15px;
+}
 @media screen and (max-width: 750px){
     .skillsHeader {
         width:  100%;

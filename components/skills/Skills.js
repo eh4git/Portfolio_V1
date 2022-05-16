@@ -40,36 +40,70 @@ const Skills = () => {
     return (
         <div className={`${skillsStyle.skillsContainer} ${skillsContainerCN}`}>
             <h2 className={`${skillsStyle.skillsHeader} ${skillsHeaderCN}`}>Skills</h2><br />
-            <Row xs='1' md='2'>
-                <Col >
-                    <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Technical</h4>
-                    <ul>
-                        {profileText.skills.technical.map((item, i) => {
-                            return (
-                                <li key={i} 
-                                    className={`${skillsStyle.skill} ${skillCN}`}
-                                >
-                                    {item}
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </Col>
-                <Col >
-                    <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Other</h4>
-                    <ul>
-                        {profileText.skills.other.map((item, i) => {
-                            return (
-                                <li key={i}
-                                className={`${skillsStyle.skill} ${skillCN}`}
-                                >
-                                    {item}
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </Col>
-            </Row>
+
+            <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Languages</h4>
+            <ul style={{ "display": "flex", "flexWrap": "wrap", "listStyle": "none" }}>
+                {profileText.skills.language.map((item, i) => {
+                    return (
+                        <li key={i}
+                            className={`${skillsStyle.skill} ${skillCN}`}
+                        >
+                            {item}
+                        </li>
+                    )
+                })}
+            </ul>
+
+            <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Technical</h4>
+            <ul style={{ "display": "flex", "flexWrap": "wrap", "listStyle": "none" }}>
+                {profileText.skills.technical.map((item, i) => {
+                    return (
+                        <li key={i}
+                            className={`${skillsStyle.skill} ${skillCN}`}
+                        >
+                            {item}
+                        </li>
+                    )
+                })}
+            </ul>
+
+            <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Databases</h4>
+            <ul style={{ "display": "flex", "flexWrap": "wrap", "listStyle": "none" }}>
+                {profileText.skills.database.map((item, i) => {
+                    return (
+                        <li key={i}
+                            className={`${skillsStyle.skill} ${skillCN}`}
+                        >
+                            {item}
+                        </li>
+                    )
+                })}
+            </ul>
+            <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Operating Systems</h4>
+            <ul style={{ "display": "flex", "flexWrap": "wrap", "listStyle": "none" }}>
+                {profileText.skills.os.map((item, i) => {
+                    return (
+                        <li key={i}
+                            className={`${skillsStyle.skill} ${skillCN}`}
+                        >
+                            {item}
+                        </li>
+                    )
+                })}
+            </ul>
+            <h4 className={`${skillsStyle.skillsSubHeader} ${skillsSubHeaderCN}`}>Other</h4>
+            <ul style={{ "display": "flex", "flexWrap": "wrap", "listStyle": "none" }}>
+                {profileText.skills.other.map((item, i) => {
+                    return (
+                        <li key={i}
+                            className={`${skillsStyle.skill} ${skillCN}`}
+                        >
+                            {item}
+                        </li>
+                    )
+                })}
+            </ul>
+
         </div>
 
     )

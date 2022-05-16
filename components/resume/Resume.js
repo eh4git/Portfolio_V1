@@ -3,7 +3,7 @@ import { Context } from "../../context/index"
 import resumeStyle from "./resumeStyles.module.css"
 import { Jumbotron, Row, Col } from 'reactstrap';
 
-import Pdf from "../../public/assets/docs/WebDevResume.pdf";
+// import Pdf from "../../public/assets/docs/WebDevResume.pdf";
 
 const Resume = () => {
 

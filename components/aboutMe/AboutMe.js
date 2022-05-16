@@ -52,7 +52,13 @@ const AboutMe = () => {
                 />
             </div>
                 <p className={`${aboutMeStyle.portfolioParagraph} ${portfolioParagraphCN}`}>
-                    {profileText.aboutMe}
+                    {profileText.aboutMe[0]}
+                </p>
+                <p className={`${aboutMeStyle.portfolioParagraph} ${portfolioParagraphCN}`}>
+                    {profileText.aboutMe[1]}
+                </p>
+                <p className={`${aboutMeStyle.portfolioParagraph} ${portfolioParagraphCN}`}>
+                    {profileText.aboutMe[2]}
                 </p>
         </Jumbotron>
     )

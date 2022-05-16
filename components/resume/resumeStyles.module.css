@@ -16,11 +16,13 @@
     margin-bottom: 20px;
 }
 .resumeFrame {
-    background-image: url('../../public/assets/images/WebDevResume1.jpg');
+    background-image: url('../../public/assets/images/WebDevResume.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    transition-delay: .25s;
+    transition: background-image 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .55s;
     margin-top: 15px;
     margin: auto;
     height: 80%;
@@ -29,7 +31,7 @@
     overflow: hidden;
 }
 .resumeFrame:hover { 
-    background-image: url('../../public/assets/images/WebDevResume.jpg');
+    background-image: url('../../public/assets/images/WebDevResume1.png');
     /* height: 450px; */
     cursor: grab;
 }
