@@ -16,7 +16,7 @@
     margin-bottom: 20px;
 }
 .resumeFrame {
-    background-image: url('/assets/images/WebDevResume.png');
+    background-image: url('https://github.com/eh4git/Portfolio_V1/blob/master/public/assets/images/WebDevResume.PNG?raw=true');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -31,7 +31,7 @@
     overflow: hidden;
 }
 .resumeFrame:hover { 
-    background-image: url('/assets/images/WebDevResume1.png');
+    background-image: url('https://github.com/eh4git/Portfolio_V1/blob/master/public/assets/images/WebDevResume1.PNG?raw=true');
     /* height: 450px; */
     cursor: grab;
 }
